@@ -32,11 +32,11 @@ format:
     
 comments:
   giscus:
-    repo: AUTHOR/REPO # Replace with your repo
-    repo-id: R_kgDO... # Replace with your repo ID
+    repo: AmanPandey28/amanpandey28.github.io
+    repo-id: R_kgDOQwURNw
     category: General
-    category-id: DIC_kwDO... # Replace with your category ID
-    mapping: title
+    category-id: DIC_kwDOQwURN84C0VNI
+    mapping: pathname
     reactions-enabled: true
     input-position: top
     theme: light

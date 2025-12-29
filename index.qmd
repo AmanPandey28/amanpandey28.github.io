@@ -7,10 +7,10 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/aman-pandey-sanjeev-kumar-b55867b8/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/AmanPandey28
 ---
 
 I am a dual Master’s student at Purdue University (ECE & IE) with a deep interest in Machine Learning Systems, High-Performance Computing, and AI Infrastructure. I am passionate about the "full-stack" nature of modern AI—exploring the critical bridge where model architecture meets compiler design and hardware acceleration. My work is grounded in a strong architectural understanding of the deep learning landscape, from foundational CNNs and LSTMs to state-of-the-art Transformers, VLMs, and Diffusion models.

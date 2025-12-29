@@ -1,0 +1,16 @@
+---
+title: "Optimizing CUDA Kernels"
+date: "2025-12-28"
+categories: [CUDA, C++]
+image: https://placeholder.co/400  # You can add a real image later
+description: "How I optimized a matrix multiplication kernel by 20%."
+---
+
+## Introduction
+
+Here is how I wrote the kernel...
+
+```cpp
+__global__ void matMul(float* A, float* B, float* C) {
+    // My code here
+}

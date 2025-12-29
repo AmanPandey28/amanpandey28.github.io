@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Optimizing CUDA Kernels\n\n\n\nCUDA\n\n\nC++\n\n\n\nHow I optimized a matrix multiplication kernel by 20%.\n\n\n\n\n\n\nDec 28, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Machine Learning Systems Engineer",
+    "section": "",
+    "text": "I am a dual Master’s student at Purdue University (ECE & IE) with a deep interest in Machine Learning Systems, High-Performance Computing, and AI Infrastructure. I am passionate about the “full-stack” nature of modern AI—exploring the critical bridge where model architecture meets compiler design and hardware acceleration. My work is grounded in a strong architectural understanding of the deep learning landscape, from foundational CNNs and LSTMs to state-of-the-art Transformers, VLMs, and Diffusion models.\nI am particularly excited by the “systems journey” of these workloads. My projects revolve around analyzing how high-level abstractions in frameworks like PyTorch are captured as computational graphs, lowered through various Intermediate Representations (IRs), and ultimately compiled down to hardware-specific instruction sets (such as PTX, SASS, or machine code). I enjoy working on challenges related to inference and training optimization, including KV-cache management, quantization, operator fusion, and Mixture-of-Experts (MoE) execution. Through my work with CUDA C++ and Triton, I actively build custom kernels that leverage tiling strategies and memory hierarchies, while also exploring scalable paradigms for distributed and disaggregated inference across diverse hardware platforms.\nI am seeking opportunities in machine learning systems, infrastructure, and performance-oriented engineering roles, where I can contribute to building reliable, efficient, and scalable AI systems. This website highlights selected projects and technical writing that reflect how I approach system design, optimization, and problem-solving."
+  },
+  {
+    "objectID": "projects/cuda-kernel.html",
+    "href": "projects/cuda-kernel.html",
+    "title": "Optimizing CUDA Kernels",
+    "section": "",
+    "text": "Here is how I wrote the kernel…\n```cpp global void matMul(float* A, float* B, float* C) { // My code here }"
+  },
+  {
+    "objectID": "projects/cuda-kernel.html#introduction",
+    "href": "projects/cuda-kernel.html#introduction",
+    "title": "Optimizing CUDA Kernels",
+    "section": "",
+    "text": "Here is how I wrote the kernel…\n```cpp global void matMul(float* A, float* B, float* C) { // My code here }"
+  }
+]

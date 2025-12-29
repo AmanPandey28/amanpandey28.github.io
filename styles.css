@@ -1,0 +1,129 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Inconsolata:wght@400;700&display=swap');
+
+:root {
+  /* Academic / Classic Palette */
+  --primary-color: #a52a2a;
+  /* Brown/Red for headings */
+  --link-color: #0056b3;
+  /* Classic Blue for links */
+  --link-hover-color: #800000;
+  /* Darker red for hover */
+  --bg-color-light: #fcfcfc;
+  /* Very light grey/warm white */
+  --text-color: #333333;
+  /* Dark Grey for readability */
+  --navbar-bg: #ffffff;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
+  line-height: 1.8;
+  /* Increased for "book" feel */
+  font-size: 1.15rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid rgba(165, 42, 42, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.navbar-brand {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  color: #444 !important;
+  font-size: 1.15rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+  text-decoration: underline;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  border-bottom: 1px solid var(--link-hover-color);
+  text-decoration: none;
+}
+
+/* Code */
+pre,
+code {
+  font-family: 'Inconsolata', monospace;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Dark Mode Overrides (Must look good but respect the "Classic" vibe) */
+body.quarto-dark {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3 {
+  color: #ffcccb;
+  /* Light red/pink for contrast */
+  border-bottom-color: rgba(255, 204, 203, 0.2);
+}
+
+body.quarto-dark a {
+  color: #81a1c1;
+  border-bottom-color: #81a1c1;
+}
+
+body.quarto-dark .navbar {
+  background-color: #222 !important;
+  border-bottom: 1px solid #333;
+}
+
+body.quarto-dark .navbar-nav .nav-link {
+  color: #bbb !important;
+}
+
+body.quarto-dark .navbar-nav .nav-link:hover {
+  color: #fff !important;
+}

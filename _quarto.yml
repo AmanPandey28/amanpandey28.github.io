@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: docs  # This makes publishing to GitHub Pages easier later
+
+website:
+  title: "Aman Pandey Sanjeev Kumar"
+  navbar:
+    left:
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "Resources"
+        href: resources.qmd
+      - text: "Puzzles"
+        href: puzzles.qmd
+      - text: "Others"
+        href: others.qmd
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/aman-pandey-sanjeev-kumar-b55867b8/
+      - icon: github
+        href: https://github.com/AmanPandey28
+
+format:
+  html:
+    theme: 
+      light: litera
+      dark: slate
+    css: styles.css
+    toc: true
+    
+comments:
+  giscus:
+    repo: AUTHOR/REPO # Replace with your repo
+    repo-id: R_kgDO... # Replace with your repo ID
+    category: General
+    category-id: DIC_kwDO... # Replace with your category ID
+    mapping: title
+    reactions-enabled: true
+    input-position: top
+    theme: light

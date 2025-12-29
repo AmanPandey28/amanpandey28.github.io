@@ -1,0 +1,23 @@
+{
+  "others.qmd": {
+    "others.html": "fcf31050"
+  },
+  "puzzles.qmd": {
+    "puzzles.html": "5719be06"
+  },
+  "blog/index.qmd": {
+    "index.html": "53fb6df2"
+  },
+  "index.qmd": {
+    "index.html": "3ee0adb3"
+  },
+  "resources.qmd": {
+    "resources.html": "1ff44ddb"
+  },
+  "projects/cuda-kernel.qmd": {
+    "cuda-kernel.html": "c8240048"
+  },
+  "projects/index.qmd": {
+    "index.html": "fc6b9aea"
+  }
+}

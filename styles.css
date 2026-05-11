@@ -127,3 +127,194 @@ body.quarto-dark .navbar-nav .nav-link {
 body.quarto-dark .navbar-nav .nav-link:hover {
   color: #fff !important;
 }
+
+/* Project cards */
+.project-page-intro {
+  max-width: 760px;
+  margin: 0 0 2rem 0;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.project-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.project-category-grid > p,
+.project-stack > p {
+  margin: 0;
+}
+
+.project-category-grid > p {
+  display: flex;
+}
+
+.project-category-card {
+  display: flex;
+  width: 100%;
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.35rem;
+  border: 1px solid #e0ded8;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text-color);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-category-card,
+.project-category-card:hover,
+.project-row-card,
+.project-row-card:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #e0ded8;
+}
+
+.project-category-card:hover {
+  color: var(--text-color);
+  border-color: rgba(165, 42, 42, 0.45);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.project-card-kicker {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--primary-color);
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.project-card-title {
+  display: block;
+  color: var(--primary-color);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.project-card-description {
+  display: block;
+  margin: 1rem 0 1.25rem;
+  color: #444;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.project-card-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid rgba(0, 86, 179, 0.22);
+  border-radius: 999px;
+  background: rgba(0, 86, 179, 0.06);
+  color: #17466f;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.project-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.project-row-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.9fr) minmax(240px, 1.6fr);
+  gap: 1rem;
+  align-items: center;
+  min-height: 96px;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid #e0ded8;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text-color);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.035);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-row-card:hover {
+  color: var(--text-color);
+  border-color: rgba(165, 42, 42, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+}
+
+.project-row-title {
+  color: var(--primary-color);
+  font-size: 1.28rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.project-row-meta {
+  color: #4b4b4b;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+body.quarto-dark .project-page-intro {
+  color: #c8c8c8;
+}
+
+body.quarto-dark .project-category-card,
+body.quarto-dark .project-row-card {
+  background: #242424;
+  border-color: #3a3a3a;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+body.quarto-dark .project-category-card:hover,
+body.quarto-dark .project-row-card:hover {
+  border-color: rgba(255, 204, 203, 0.55);
+  color: #f1f1f1;
+}
+
+body.quarto-dark .project-card-title,
+body.quarto-dark .project-row-title,
+body.quarto-dark .project-card-kicker {
+  color: #ffcccb;
+}
+
+body.quarto-dark .project-card-description,
+body.quarto-dark .project-row-meta {
+  color: #d7d7d7;
+}
+
+body.quarto-dark .project-card-tags span {
+  border-color: rgba(129, 161, 193, 0.35);
+  background: rgba(129, 161, 193, 0.12);
+  color: #b9d3ee;
+}
+
+@media (max-width: 680px) {
+  .project-category-card {
+    min-height: 230px;
+  }
+
+  .project-row-card {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    min-height: 118px;
+  }
+}

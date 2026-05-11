@@ -1,0 +1,37 @@
+---
+title: "DNN from Scratch"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Implementing core deep learning layers and training mechanics from first
+principles, with each project ready to link to its GitHub repository as the
+code is published.
+</p>
+
+<div class="project-stack">
+  <!-- Add ANN GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">ANN</span>
+    <span class="project-row-meta">Fully connected networks, backpropagation, activations, and optimizers in NumPy</span>
+  </a>
+
+  <!-- Add CNN GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">CNN</span>
+    <span class="project-row-meta">Convolution, pooling, im2col, batch norm, and image-classification training loops</span>
+  </a>
+
+  <!-- Add RNN GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">RNN</span>
+    <span class="project-row-meta">Sequence modeling, truncated BPTT, embeddings, and recurrent hidden state dynamics</span>
+  </a>
+
+  <!-- Add LSTM GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">LSTM</span>
+    <span class="project-row-meta">Gates, cell state, gradient flow, and sequence prediction experiments</span>
+  </a>
+</div>

@@ -1,0 +1,36 @@
+---
+title: "DL Compilers"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Compiler-oriented projects around graph capture, IR lowering, fusion,
+scheduling, generated kernels, and deployment-oriented compilation.
+</p>
+
+<div class="project-stack">
+  <!-- Add MLIR GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR</span>
+    <span class="project-row-meta">IR design, dialects, lowering passes, and code generation pipelines</span>
+  </a>
+
+  <!-- Add XLA GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">XLA</span>
+    <span class="project-row-meta">Graph compilation, HLO-style transformations, and accelerator execution</span>
+  </a>
+
+  <!-- Add TVM GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">TVM</span>
+    <span class="project-row-meta">Tensor program optimization, scheduling, autotuning, and lowering</span>
+  </a>
+
+  <!-- Add torch.compile GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">torch.compile</span>
+    <span class="project-row-meta">TorchDynamo graph capture, Inductor codegen, graph breaks, and guard behavior</span>
+  </a>
+</div>

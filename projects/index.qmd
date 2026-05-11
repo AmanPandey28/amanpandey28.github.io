@@ -1,8 +1,142 @@
 ---
 title: "Projects"
-listing:
-  contents: "*.qmd"
-  type: grid
-  sort: "date desc"
-  categories: true
+comments: false
+toc: false
 ---
+
+<p class="project-page-intro">
+Selected project areas across GPU performance, deep learning runtimes,
+compiler stacks, model architectures, and end-to-end ML systems work.
+</p>
+
+<div class="project-category-grid">
+  <a class="project-category-card" href="gpu-kernels.html">
+    <span class="project-card-kicker">Performance</span>
+    <span class="project-card-title">GPU Kernels</span>
+    <span class="project-card-description">
+      CUDA C++, Triton, and CuTe DSL kernels for deep learning operators and memory-bound workloads.
+    </span>
+    <span class="project-card-tags">
+      <span>CUDA C++</span>
+      <span>Triton</span>
+      <span>CuTe DSL</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="runtime.html">
+    <span class="project-card-kicker">Serving</span>
+    <span class="project-card-title">Runtime</span>
+    <span class="project-card-description">
+      Runtime systems work around vLLM, SGLang, TensorRT, and TensorRT-LLM.
+    </span>
+    <span class="project-card-tags">
+      <span>vLLM</span>
+      <span>SGLang</span>
+      <span>TensorRT</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="dl-framework.html">
+    <span class="project-card-kicker">Frameworks</span>
+    <span class="project-card-title">DL Framework</span>
+    <span class="project-card-description">
+      Building a small PyTorch-style framework in Python and C++ with tensors, autograd, modules, and kernels.
+    </span>
+    <span class="project-card-tags">
+      <span>Python</span>
+      <span>C++</span>
+      <span>Autograd</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="dl-compilers.html">
+    <span class="project-card-kicker">Compilation</span>
+    <span class="project-card-title">DL Compilers</span>
+    <span class="project-card-description">
+      Graph capture, IR lowering, fusion, scheduling, and compiler pipelines for tensor programs.
+    </span>
+    <span class="project-card-tags">
+      <span>MLIR</span>
+      <span>XLA</span>
+      <span>torch.compile</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="profiling.html">
+    <span class="project-card-kicker">Measurement</span>
+    <span class="project-card-title">Profiling</span>
+    <span class="project-card-description">
+      Nsight Systems, Nsight Compute, PyTorch Profiler, memory traces, and reproducible bottleneck analysis.
+    </span>
+    <span class="project-card-tags">
+      <span>Nsight</span>
+      <span>PyTorch</span>
+      <span>Perfetto</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="inference-optimization.html">
+    <span class="project-card-kicker">Efficiency</span>
+    <span class="project-card-title">Inference Optimization</span>
+    <span class="project-card-description">
+      Quantization, KV cache reuse, prefix caching, batching, speculative decoding, and serving efficiency.
+    </span>
+    <span class="project-card-tags">
+      <span>KV Cache</span>
+      <span>Spec Decode</span>
+      <span>Batching</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="transformers.html">
+    <span class="project-card-kicker">Architectures</span>
+    <span class="project-card-title">Transformers</span>
+    <span class="project-card-description">
+      Transformer implementations in NumPy and PyTorch, including attention variants and efficient architectures.
+    </span>
+    <span class="project-card-tags">
+      <span>Attention</span>
+      <span>PyTorch</span>
+      <span>NumPy</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="diffusion.html">
+    <span class="project-card-kicker">Generative Models</span>
+    <span class="project-card-title">Diffusion</span>
+    <span class="project-card-description">
+      Denoising models, schedulers, U-Nets, latent diffusion, and efficient sampling experiments.
+    </span>
+    <span class="project-card-tags">
+      <span>DDPM</span>
+      <span>U-Net</span>
+      <span>Sampling</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="reinforcement-learning.html">
+    <span class="project-card-kicker">Learning Systems</span>
+    <span class="project-card-title">Reinforcement Learning</span>
+    <span class="project-card-description">
+      Policy gradients, actor-critic methods, value learning, and RL systems experiments.
+    </span>
+    <span class="project-card-tags">
+      <span>PPO</span>
+      <span>DQN</span>
+      <span>Actor-Critic</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="dnn-from-scratch.html">
+    <span class="project-card-kicker">Foundations</span>
+    <span class="project-card-title">DNN from Scratch</span>
+    <span class="project-card-description">
+      Core neural network building blocks from scratch, from ANN and CNN layers to training loops.
+    </span>
+    <span class="project-card-tags">
+      <span>NumPy</span>
+      <span>Backprop</span>
+      <span>Training</span>
+    </span>
+  </a>
+</div>

@@ -1,0 +1,29 @@
+---
+title: "GPU Kernels"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Operator-level performance work across CUDA C++, Triton, and CuTe DSL.
+</p>
+
+<div class="project-stack">
+  <!-- Add LayerNorm Kernel GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">LayerNorm Kernel</span>
+    <span class="project-row-meta">Triton, CuTe DSL</span>
+  </a>
+
+  <!-- Add Vector Addition GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Vector Addition</span>
+    <span class="project-row-meta">Triton, CUDA C++</span>
+  </a>
+
+  <!-- Add GEMM GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">GEMM</span>
+    <span class="project-row-meta">CUDA C++, Triton, CuTe DSL</span>
+  </a>
+</div>

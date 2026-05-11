@@ -1,0 +1,36 @@
+---
+title: "DL Framework"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Building a compact PyTorch-style deep learning framework to understand tensors,
+autograd, modules, dispatch, and native performance paths.
+</p>
+
+<div class="project-stack">
+  <!-- Add Python Tensor Library GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Python Tensor Library</span>
+    <span class="project-row-meta">Tensor object, broadcasting, indexing, reductions, and NumPy-backed operations</span>
+  </a>
+
+  <!-- Add Autograd Engine GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Autograd Engine</span>
+    <span class="project-row-meta">Dynamic computation graph, reverse-mode differentiation, and gradient checks</span>
+  </a>
+
+  <!-- Add Neural Network Modules GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Neural Network Modules</span>
+    <span class="project-row-meta">Parameter management, layers, losses, optimizers, and training loops</span>
+  </a>
+
+  <!-- Add C++ Backend GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">C++ Backend</span>
+    <span class="project-row-meta">Native tensor kernels, Python bindings, memory layout, and extension interfaces</span>
+  </a>
+</div>

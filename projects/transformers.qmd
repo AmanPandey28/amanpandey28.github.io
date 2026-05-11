@@ -1,0 +1,36 @@
+---
+title: "Transformers"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Transformer projects covering from-scratch implementations, PyTorch models,
+attention mechanics, architecture variants, and efficiency-focused experiments.
+</p>
+
+<div class="project-stack">
+  <!-- Add Transformer in NumPy GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Transformer in NumPy</span>
+    <span class="project-row-meta">Tokenization, embeddings, attention, MLP blocks, layer norm, and training loop basics</span>
+  </a>
+
+  <!-- Add Transformer in PyTorch GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Transformer in PyTorch</span>
+    <span class="project-row-meta">Clean encoder/decoder implementation with modular attention and training utilities</span>
+  </a>
+
+  <!-- Add Attention Variants GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Attention Variants</span>
+    <span class="project-row-meta">MHA, MQA, GQA, sliding-window attention, rotary embeddings, and KV-cache-aware decoding</span>
+  </a>
+
+  <!-- Add Efficient Architectures GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Efficient Architectures</span>
+    <span class="project-row-meta">Long-context, sparse, linear-attention, and memory-efficient transformer experiments</span>
+  </a>
+</div>

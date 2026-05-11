@@ -1,0 +1,36 @@
+---
+title: "Diffusion"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Diffusion model projects from denoising fundamentals to latent generation and
+sampling efficiency.
+</p>
+
+<div class="project-stack">
+  <!-- Add DDPM from Scratch GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">DDPM from Scratch</span>
+    <span class="project-row-meta">Forward noising, denoising objective, beta schedules, and image generation loop</span>
+  </a>
+
+  <!-- Add U-Net Denoiser GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">U-Net Denoiser</span>
+    <span class="project-row-meta">Residual blocks, time embeddings, attention blocks, and multi-scale feature maps</span>
+  </a>
+
+  <!-- Add Latent Diffusion GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Latent Diffusion</span>
+    <span class="project-row-meta">Autoencoder latents, conditioning, classifier-free guidance, and image synthesis</span>
+  </a>
+
+  <!-- Add Fast Sampling GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Fast Sampling</span>
+    <span class="project-row-meta">DDIM-style sampling, scheduler comparisons, and quality-latency tradeoffs</span>
+  </a>
+</div>

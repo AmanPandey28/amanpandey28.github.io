@@ -1,0 +1,36 @@
+---
+title: "Profiling"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Profiling workflows for finding bottlenecks across Python, PyTorch operators,
+CUDA kernels, memory allocation, and full CPU/GPU timelines.
+</p>
+
+<div class="project-stack">
+  <!-- Add Nsight Systems GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Nsight Systems</span>
+    <span class="project-row-meta">System-wide CPU/GPU timelines, CUDA API traces, NVTX ranges, and utilization gaps</span>
+  </a>
+
+  <!-- Add Nsight Compute GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Nsight Compute</span>
+    <span class="project-row-meta">Kernel-level metrics, occupancy, memory throughput, warp stalls, and source correlation</span>
+  </a>
+
+  <!-- Add PyTorch Profiler GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">PyTorch Profiler</span>
+    <span class="project-row-meta">Operator costs, CPU/CUDA activity, stack traces, tensor shapes, memory, and traces</span>
+  </a>
+
+  <!-- Add CUDA Memory Profiling GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">CUDA Memory Profiling</span>
+    <span class="project-row-meta">Allocator snapshots, fragmentation, peak memory, and non-PyTorch allocation debugging</span>
+  </a>
+</div>

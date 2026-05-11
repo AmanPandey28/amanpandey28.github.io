@@ -19,5 +19,35 @@
   },
   "projects/index.qmd": {
     "index.html": "fc6b9aea"
+  },
+  "projects/dnn-from-scratch.qmd": {
+    "dnn-from-scratch.html": "84522a84"
+  },
+  "projects/runtime.qmd": {
+    "runtime.html": "9b35bc5c"
+  },
+  "projects/gpu-kernels.qmd": {
+    "gpu-kernels.html": "51b4ba05"
+  },
+  "projects/dl-compilers.qmd": {
+    "dl-compilers.html": "39518c84"
+  },
+  "projects/inference-optimization.qmd": {
+    "inference-optimization.html": "54819fed"
+  },
+  "projects/transformers.qmd": {
+    "transformers.html": "10ac61bf"
+  },
+  "projects/profiling.qmd": {
+    "profiling.html": "a7e6368c"
+  },
+  "projects/reinforcement-learning.qmd": {
+    "reinforcement-learning.html": "8d9769cb"
+  },
+  "projects/dl-framework.qmd": {
+    "dl-framework.html": "d938461d"
+  },
+  "projects/diffusion.qmd": {
+    "diffusion.html": "b7ecc6e7"
   }
 }

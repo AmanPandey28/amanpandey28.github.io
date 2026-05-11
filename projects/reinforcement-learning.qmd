@@ -1,0 +1,36 @@
+---
+title: "Reinforcement Learning"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Reinforcement learning projects focused on value learning, policy optimization,
+actor-critic training, and scalable experiment loops.
+</p>
+
+<div class="project-stack">
+  <!-- Add DQN GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">DQN</span>
+    <span class="project-row-meta">Replay buffers, target networks, epsilon-greedy control, and value learning</span>
+  </a>
+
+  <!-- Add Policy Gradients GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Policy Gradients</span>
+    <span class="project-row-meta">REINFORCE, baselines, reward normalization, and trajectory sampling</span>
+  </a>
+
+  <!-- Add Actor-Critic GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Actor-Critic</span>
+    <span class="project-row-meta">Advantage estimation, value heads, entropy regularization, and stable updates</span>
+  </a>
+
+  <!-- Add PPO GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">PPO</span>
+    <span class="project-row-meta">Clipped objectives, rollout collection, minibatch updates, and policy evaluation</span>
+  </a>
+</div>

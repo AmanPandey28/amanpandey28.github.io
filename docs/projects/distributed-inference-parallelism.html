@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DL Compilers – Aman Pandey Sanjeev Kumar</title>
+<title>Distributed Inference &amp; Parallelism – Aman Pandey Sanjeev Kumar</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -313,7 +313,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DL Compilers</h1>
+<h1 class="title">Distributed Inference &amp; Parallelism</h1>
 </div>
 
 
@@ -331,13 +331,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p class="project-page-intro">
-Compiler-oriented projects around graph capture, IR lowering, fusion, scheduling, generated kernels, and deployment-oriented compilation.
+Scale-out inference projects around communication primitives, process groups, parallelism strategies, placement, and bandwidth-aware serving.
 </p>
 <div class="project-stack">
-<p><!-- Add MLIR GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">MLIR</span> <span class="project-row-meta">IR design, dialects, lowering passes, and code generation pipelines</span> </a></p>
-<p><!-- Add XLA GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">XLA</span> <span class="project-row-meta">Graph compilation, HLO-style transformations, and accelerator execution</span> </a></p>
-<p><!-- Add TVM GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">TVM</span> <span class="project-row-meta">Tensor program optimization, scheduling, autotuning, and lowering</span> </a></p>
-<p><!-- Add torch.compile GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">torch.compile</span> <span class="project-row-meta">TorchDynamo graph capture, Inductor codegen, graph breaks, and guard behavior</span> </a></p>
+<p><!-- Add Collective Communication GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Collective Communication</span> <span class="project-row-meta">all-reduce, all-gather, reduce-scatter, all-to-all, broadcast, process groups, and async communication</span> </a></p>
+<p><!-- Add Tensor Parallelism GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Tensor Parallelism</span> <span class="project-row-meta">Sharding attention and MLP layers across GPUs for large-model inference</span> </a></p>
+<p><!-- Add Pipeline Parallelism GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Pipeline Parallelism</span> <span class="project-row-meta">Layer partitioning, microbatching, stage scheduling, and cross-node serving</span> </a></p>
+<p><!-- Add Expert Parallelism GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Expert Parallelism</span> <span class="project-row-meta">MoE expert placement, token routing, all-to-all dispatch, and load balancing</span> </a></p>
+<p><!-- Add Context Parallelism GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Context Parallelism</span> <span class="project-row-meta">Long-context sequence sharding for attention and KV-cache-heavy workloads</span> </a></p>
+<p><!-- Add Data / Replica Parallelism GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Data / Replica Parallelism</span> <span class="project-row-meta">Serving replicas, request routing, throughput scaling, and failover</span> </a></p>
+<p><!-- Add Topology-Aware Serving GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Topology-Aware Serving</span> <span class="project-row-meta">Placement, communication overlap, bandwidth bottlenecks, and multi-node profiling</span> </a></p>
 </div>
 
 

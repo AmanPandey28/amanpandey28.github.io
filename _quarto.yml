@@ -6,6 +6,8 @@ website:
   title: "Aman Pandey Sanjeev Kumar"
   navbar:
     left:
+      - text: "Resume"
+        href: resume.qmd
       - text: "Projects"
         href: projects/index.qmd
       - text: "Blog"

@@ -7,32 +7,60 @@
     "text": "I am a dual Master’s student at Purdue University (ECE & IE) with a deep interest in Machine Learning Systems, High-Performance Computing, and AI Infrastructure. I am passionate about the “full-stack” nature of modern AI—exploring the critical bridge where model architecture meets compiler design and hardware acceleration. My work is grounded in a strong architectural understanding of the deep learning landscape, from foundational CNNs and LSTMs to state-of-the-art Transformers, VLMs, and Diffusion models.\nI am particularly excited by the “systems journey” of these workloads. My projects revolve around analyzing how high-level abstractions in frameworks like PyTorch are captured as computational graphs, lowered through various Intermediate Representations (IRs), and ultimately compiled down to hardware-specific instruction sets (such as PTX, SASS, or machine code). I enjoy working on challenges related to inference and training optimization, including KV-cache management, quantization, operator fusion, and Mixture-of-Experts (MoE) execution. Through my work with CUDA C++ and Triton, I actively build custom kernels that leverage tiling strategies and memory hierarchies, while also exploring scalable paradigms for distributed and disaggregated inference across diverse hardware platforms.\nI am seeking opportunities in machine learning systems, infrastructure, and performance-oriented engineering roles, where I can contribute to building reliable, efficient, and scalable AI systems. This website highlights selected projects and technical writing that reflect how I approach system design, optimization, and problem-solving."
   },
   {
-    "objectID": "projects/diffusion.html",
-    "href": "projects/diffusion.html",
-    "title": "Diffusion",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
     "section": "",
-    "text": "Diffusion model projects from denoising fundamentals to latent generation and sampling efficiency.\n\n\n  DDPM from Scratch Forward noising, denoising objective, beta schedules, and image generation loop \n  U-Net Denoiser Residual blocks, time embeddings, attention blocks, and multi-scale feature maps \n  Latent Diffusion Autoencoder latents, conditioning, classifier-free guidance, and image synthesis \n  Fast Sampling DDIM-style sampling, scheduler comparisons, and quality-latency tradeoffs"
+    "text": "Machine Learning Systems Engineer\n\nDownload ResumeOpen PDFView ProjectsGitHubLinkedIn"
   },
   {
-    "objectID": "projects/inference-optimization.html",
-    "href": "projects/inference-optimization.html",
-    "title": "Inference Optimization",
-    "section": "",
-    "text": "Techniques for improving serving latency, throughput, memory efficiency, time-to-first-token, and sustained decode performance.\n\n\n  Quantization FP8, INT8, INT4, AWQ/GPTQ-style compression, and accuracy-performance tradeoffs \n  KV Cache Optimization Paged KV blocks, reuse across requests, offloading, eviction, MQA, and GQA \n  Prefix Caching Automatic prefix reuse for shared prompts and retrieval-heavy workloads \n  Continuous Batching Dynamic scheduling for mixed prefill/decode workloads and higher GPU utilization \n  Speculative Decoding Draft-and-verify decoding, EAGLE-style methods, and acceptance-rate tuning \n  Disaggregated Serving Separating prefill and decode paths for scalable, latency-aware inference"
+    "objectID": "resume.html#technical-focus",
+    "href": "resume.html#technical-focus",
+    "title": "Resume",
+    "section": "Technical Focus",
+    "text": "Technical Focus\n\n GPU Performance CUDA C++, Triton, memory hierarchy, tiling, profiling, and kernel optimization \n Inference Systems KV cache, continuous batching, speculative decoding, quantization, and serving efficiency \n Compilers & Frameworks Graph capture, IR lowering, operator fusion, autograd, and PyTorch-style framework internals \n Distributed AI Collectives, tensor/pipeline/expert/context parallelism, process groups, and topology-aware serving"
   },
   {
-    "objectID": "projects/dl-compilers.html",
-    "href": "projects/dl-compilers.html",
-    "title": "DL Compilers",
+    "objectID": "projects/dl-framework.html",
+    "href": "projects/dl-framework.html",
+    "title": "DL Framework",
     "section": "",
-    "text": "Compiler-oriented projects around graph capture, IR lowering, fusion, scheduling, generated kernels, and deployment-oriented compilation.\n\n\n  MLIR IR design, dialects, lowering passes, and code generation pipelines \n  XLA Graph compilation, HLO-style transformations, and accelerator execution \n  TVM Tensor program optimization, scheduling, autotuning, and lowering \n  torch.compile TorchDynamo graph capture, Inductor codegen, graph breaks, and guard behavior"
+    "text": "Building a compact PyTorch-style deep learning framework to understand tensors, autograd, modules, dispatch, and native performance paths.\n\n\n  Python Tensor Library Tensor object, broadcasting, indexing, reductions, and NumPy-backed operations \n  Autograd Engine Dynamic computation graph, reverse-mode differentiation, and gradient checks \n  Neural Network Modules Parameter management, layers, losses, optimizers, and training loops \n  C++ Backend Native tensor kernels, Python bindings, memory layout, and extension interfaces"
   },
   {
-    "objectID": "projects/profiling.html",
-    "href": "projects/profiling.html",
-    "title": "Profiling",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "Profiling workflows for finding bottlenecks across Python, PyTorch operators, CUDA kernels, memory allocation, and full CPU/GPU timelines.\n\n\n  Nsight Systems System-wide CPU/GPU timelines, CUDA API traces, NVTX ranges, and utilization gaps \n  Nsight Compute Kernel-level metrics, occupancy, memory throughput, warp stalls, and source correlation \n  PyTorch Profiler Operator costs, CPU/CUDA activity, stack traces, tensor shapes, memory, and traces \n  CUDA Memory Profiling Allocator snapshots, fragmentation, peak memory, and non-PyTorch allocation debugging"
+    "text": "Selected project areas across GPU performance, deep learning runtimes, compiler stacks, model architectures, and end-to-end ML systems work."
+  },
+  {
+    "objectID": "projects/index.html#featured-systems-work",
+    "href": "projects/index.html#featured-systems-work",
+    "title": "Projects",
+    "section": "Featured Systems Work",
+    "text": "Featured Systems Work\n\n Kernel Performance GPU Kernel Benchmarks  Operator-level CUDA, Triton, and CuTe work focused on memory bandwidth, tiling, occupancy, and measurable speedups.  LayerNorm · GEMM · Vector Ops \n Framework Internals Mini PyTorch-Style Framework  A compact framework path from tensors and reverse-mode autograd to modules, native kernels, and Python/C++ boundaries.  Tensors · Autograd · C++ Backend \n Scale-Out Inference Distributed Inference Parallelism  Communication primitives and model-parallel execution for multi-GPU serving, including collectives, TP, PP, EP, CP, and placement.  Collectives · TP/PP/EP · Multi-node"
+  },
+  {
+    "objectID": "projects/index.html#project-areas",
+    "href": "projects/index.html#project-areas",
+    "title": "Projects",
+    "section": "Project Areas",
+    "text": "Project Areas\n\n Performance GPU Kernels  CUDA C++, Triton, and CuTe DSL kernels for deep learning operators and memory-bound workloads.   CUDA C++ Triton CuTe DSL  \n Serving Runtime  Runtime systems work around vLLM, SGLang, TensorRT, and TensorRT-LLM.   vLLM SGLang TensorRT  \n Frameworks DL Framework  Building a small PyTorch-style framework in Python and C++ with tensors, autograd, modules, and kernels.   Python C++ Autograd  \n Compilation DL Compilers  Graph capture, IR lowering, fusion, scheduling, and compiler pipelines for tensor programs.   MLIR XLA torch.compile  \n Measurement Profiling  Nsight Systems, Nsight Compute, PyTorch Profiler, memory traces, and reproducible bottleneck analysis.   Nsight PyTorch Perfetto  \n Efficiency Inference Optimization  Quantization, KV cache reuse, prefix caching, batching, speculative decoding, and serving efficiency.   KV Cache Spec Decode Batching  \n Scale-Out Systems Distributed Inference & Parallelism  Collective communication and model-parallel execution for multi-GPU and multi-node inference.   Collectives TP / PP / EP Multi-node  \n Architectures Transformers  Transformer implementations in NumPy and PyTorch, including attention variants and efficient architectures.   Attention PyTorch NumPy  \n Generative Models Diffusion  Denoising models, schedulers, U-Nets, latent diffusion, and efficient sampling experiments.   DDPM U-Net Sampling  \n Learning Systems Reinforcement Learning  Policy gradients, actor-critic methods, value learning, and RL systems experiments.   PPO DQN Actor-Critic  \n Foundations DNN from Scratch  Core neural network building blocks from scratch, from ANN and CNN layers to training loops.   NumPy Backprop Training"
+  },
+  {
+    "objectID": "projects/reinforcement-learning.html",
+    "href": "projects/reinforcement-learning.html",
+    "title": "Reinforcement Learning",
+    "section": "",
+    "text": "Reinforcement learning projects focused on value learning, policy optimization, actor-critic training, and scalable experiment loops.\n\n\n  DQN Replay buffers, target networks, epsilon-greedy control, and value learning \n  Policy Gradients REINFORCE, baselines, reward normalization, and trajectory sampling \n  Actor-Critic Advantage estimation, value heads, entropy regularization, and stable updates \n  PPO Clipped objectives, rollout collection, minibatch updates, and policy evaluation"
+  },
+  {
+    "objectID": "projects/gpu-kernels.html",
+    "href": "projects/gpu-kernels.html",
+    "title": "GPU Kernels",
+    "section": "",
+    "text": "Operator-level performance work across CUDA C++, Triton, and CuTe DSL.\n\n\n  LayerNorm Kernel Triton, CuTe DSL \n  Vector Addition Triton, CUDA C++ \n  GEMM CUDA C++, Triton, CuTe DSL"
   },
   {
     "objectID": "projects/runtime.html",
@@ -70,31 +98,38 @@
     "text": "Implementing core deep learning layers and training mechanics from first principles, with each project ready to link to its GitHub repository as the code is published.\n\n\n  ANN Fully connected networks, backpropagation, activations, and optimizers in NumPy \n  CNN Convolution, pooling, im2col, batch norm, and image-classification training loops \n  RNN Sequence modeling, truncated BPTT, embeddings, and recurrent hidden state dynamics \n  LSTM Gates, cell state, gradient flow, and sequence prediction experiments"
   },
   {
-    "objectID": "projects/gpu-kernels.html",
-    "href": "projects/gpu-kernels.html",
-    "title": "GPU Kernels",
+    "objectID": "projects/distributed-inference-parallelism.html",
+    "href": "projects/distributed-inference-parallelism.html",
+    "title": "Distributed Inference & Parallelism",
     "section": "",
-    "text": "Operator-level performance work across CUDA C++, Triton, and CuTe DSL.\n\n\n  LayerNorm Kernel Triton, CuTe DSL \n  Vector Addition Triton, CUDA C++ \n  GEMM CUDA C++, Triton, CuTe DSL"
+    "text": "Scale-out inference projects around communication primitives, process groups, parallelism strategies, placement, and bandwidth-aware serving.\n\n\n  Collective Communication all-reduce, all-gather, reduce-scatter, all-to-all, broadcast, process groups, and async communication \n  Tensor Parallelism Sharding attention and MLP layers across GPUs for large-model inference \n  Pipeline Parallelism Layer partitioning, microbatching, stage scheduling, and cross-node serving \n  Expert Parallelism MoE expert placement, token routing, all-to-all dispatch, and load balancing \n  Context Parallelism Long-context sequence sharding for attention and KV-cache-heavy workloads \n  Data / Replica Parallelism Serving replicas, request routing, throughput scaling, and failover \n  Topology-Aware Serving Placement, communication overlap, bandwidth bottlenecks, and multi-node profiling"
   },
   {
-    "objectID": "projects/reinforcement-learning.html",
-    "href": "projects/reinforcement-learning.html",
-    "title": "Reinforcement Learning",
+    "objectID": "projects/profiling.html",
+    "href": "projects/profiling.html",
+    "title": "Profiling",
     "section": "",
-    "text": "Reinforcement learning projects focused on value learning, policy optimization, actor-critic training, and scalable experiment loops.\n\n\n  DQN Replay buffers, target networks, epsilon-greedy control, and value learning \n  Policy Gradients REINFORCE, baselines, reward normalization, and trajectory sampling \n  Actor-Critic Advantage estimation, value heads, entropy regularization, and stable updates \n  PPO Clipped objectives, rollout collection, minibatch updates, and policy evaluation"
+    "text": "Profiling workflows for finding bottlenecks across Python, PyTorch operators, CUDA kernels, memory allocation, and full CPU/GPU timelines.\n\n\n  Nsight Systems System-wide CPU/GPU timelines, CUDA API traces, NVTX ranges, and utilization gaps \n  Nsight Compute Kernel-level metrics, occupancy, memory throughput, warp stalls, and source correlation \n  PyTorch Profiler Operator costs, CPU/CUDA activity, stack traces, tensor shapes, memory, and traces \n  CUDA Memory Profiling Allocator snapshots, fragmentation, peak memory, and non-PyTorch allocation debugging"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "projects/dl-compilers.html",
+    "href": "projects/dl-compilers.html",
+    "title": "DL Compilers",
     "section": "",
-    "text": "Selected project areas across GPU performance, deep learning runtimes, compiler stacks, model architectures, and end-to-end ML systems work.\n\n\n Performance GPU Kernels  CUDA C++, Triton, and CuTe DSL kernels for deep learning operators and memory-bound workloads.   CUDA C++ Triton CuTe DSL  \n Serving Runtime  Runtime systems work around vLLM, SGLang, TensorRT, and TensorRT-LLM.   vLLM SGLang TensorRT  \n Frameworks DL Framework  Building a small PyTorch-style framework in Python and C++ with tensors, autograd, modules, and kernels.   Python C++ Autograd  \n Compilation DL Compilers  Graph capture, IR lowering, fusion, scheduling, and compiler pipelines for tensor programs.   MLIR XLA torch.compile  \n Measurement Profiling  Nsight Systems, Nsight Compute, PyTorch Profiler, memory traces, and reproducible bottleneck analysis.   Nsight PyTorch Perfetto  \n Efficiency Inference Optimization  Quantization, KV cache reuse, prefix caching, batching, speculative decoding, and serving efficiency.   KV Cache Spec Decode Batching  \n Architectures Transformers  Transformer implementations in NumPy and PyTorch, including attention variants and efficient architectures.   Attention PyTorch NumPy  \n Generative Models Diffusion  Denoising models, schedulers, U-Nets, latent diffusion, and efficient sampling experiments.   DDPM U-Net Sampling  \n Learning Systems Reinforcement Learning  Policy gradients, actor-critic methods, value learning, and RL systems experiments.   PPO DQN Actor-Critic  \n Foundations DNN from Scratch  Core neural network building blocks from scratch, from ANN and CNN layers to training loops.   NumPy Backprop Training"
+    "text": "Compiler-oriented projects around graph capture, IR lowering, fusion, scheduling, generated kernels, and deployment-oriented compilation.\n\n\n  MLIR IR design, dialects, lowering passes, and code generation pipelines \n  XLA Graph compilation, HLO-style transformations, and accelerator execution \n  TVM Tensor program optimization, scheduling, autotuning, and lowering \n  torch.compile TorchDynamo graph capture, Inductor codegen, graph breaks, and guard behavior"
   },
   {
-    "objectID": "projects/dl-framework.html",
-    "href": "projects/dl-framework.html",
-    "title": "DL Framework",
+    "objectID": "projects/inference-optimization.html",
+    "href": "projects/inference-optimization.html",
+    "title": "Inference Optimization",
     "section": "",
-    "text": "Building a compact PyTorch-style deep learning framework to understand tensors, autograd, modules, dispatch, and native performance paths.\n\n\n  Python Tensor Library Tensor object, broadcasting, indexing, reductions, and NumPy-backed operations \n  Autograd Engine Dynamic computation graph, reverse-mode differentiation, and gradient checks \n  Neural Network Modules Parameter management, layers, losses, optimizers, and training loops \n  C++ Backend Native tensor kernels, Python bindings, memory layout, and extension interfaces"
+    "text": "Techniques for improving serving latency, throughput, memory efficiency, time-to-first-token, and sustained decode performance.\n\n\n  Quantization FP8, INT8, INT4, AWQ/GPTQ-style compression, and accuracy-performance tradeoffs \n  KV Cache Optimization Paged KV blocks, reuse across requests, offloading, eviction, MQA, and GQA \n  Prefix Caching Automatic prefix reuse for shared prompts and retrieval-heavy workloads \n  Continuous Batching Dynamic scheduling for mixed prefill/decode workloads and higher GPU utilization \n  Speculative Decoding Draft-and-verify decoding, EAGLE-style methods, and acceptance-rate tuning \n  Disaggregated Serving Separating prefill and decode paths for scalable, latency-aware inference"
+  },
+  {
+    "objectID": "projects/diffusion.html",
+    "href": "projects/diffusion.html",
+    "title": "Diffusion",
+    "section": "",
+    "text": "Diffusion model projects from denoising fundamentals to latent generation and sampling efficiency.\n\n\n  DDPM from Scratch Forward noising, denoising objective, beta schedules, and image generation loop \n  U-Net Denoiser Residual blocks, time embeddings, attention blocks, and multi-scale feature maps \n  Latent Diffusion Autoencoder latents, conditioning, classifier-free guidance, and image synthesis \n  Fast Sampling DDIM-style sampling, scheduler comparisons, and quality-latency tradeoffs"
   }
 ]

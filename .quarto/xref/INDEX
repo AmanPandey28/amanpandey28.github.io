@@ -49,5 +49,11 @@
   },
   "projects/diffusion.qmd": {
     "diffusion.html": "b7ecc6e7"
+  },
+  "projects/distributed-inference-parallelism.qmd": {
+    "distributed-inference-parallelism.html": "9f5f1b96"
+  },
+  "resume.qmd": {
+    "resume.html": "6598845a"
   }
 }

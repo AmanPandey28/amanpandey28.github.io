@@ -9,6 +9,42 @@ Selected project areas across GPU performance, deep learning runtimes,
 compiler stacks, model architectures, and end-to-end ML systems work.
 </p>
 
+## Featured Systems Work
+
+<div class="featured-project-grid">
+  <a class="featured-project-card" href="gpu-kernels.html">
+    <span class="featured-project-kicker">Kernel Performance</span>
+    <span class="featured-project-title">GPU Kernel Benchmarks</span>
+    <span class="featured-project-description">
+      Operator-level CUDA, Triton, and CuTe work focused on memory bandwidth,
+      tiling, occupancy, and measurable speedups.
+    </span>
+    <span class="featured-project-footer">LayerNorm · GEMM · Vector Ops</span>
+  </a>
+
+  <a class="featured-project-card" href="dl-framework.html">
+    <span class="featured-project-kicker">Framework Internals</span>
+    <span class="featured-project-title">Mini PyTorch-Style Framework</span>
+    <span class="featured-project-description">
+      A compact framework path from tensors and reverse-mode autograd to modules,
+      native kernels, and Python/C++ boundaries.
+    </span>
+    <span class="featured-project-footer">Tensors · Autograd · C++ Backend</span>
+  </a>
+
+  <a class="featured-project-card" href="distributed-inference-parallelism.html">
+    <span class="featured-project-kicker">Scale-Out Inference</span>
+    <span class="featured-project-title">Distributed Inference Parallelism</span>
+    <span class="featured-project-description">
+      Communication primitives and model-parallel execution for multi-GPU serving,
+      including collectives, TP, PP, EP, CP, and placement.
+    </span>
+    <span class="featured-project-footer">Collectives · TP/PP/EP · Multi-node</span>
+  </a>
+</div>
+
+## Project Areas
+
 <div class="project-category-grid">
   <a class="project-category-card" href="gpu-kernels.html">
     <span class="project-card-kicker">Performance</span>
@@ -85,6 +121,19 @@ compiler stacks, model architectures, and end-to-end ML systems work.
       <span>KV Cache</span>
       <span>Spec Decode</span>
       <span>Batching</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="distributed-inference-parallelism.html">
+    <span class="project-card-kicker">Scale-Out Systems</span>
+    <span class="project-card-title">Distributed Inference &amp; Parallelism</span>
+    <span class="project-card-description">
+      Collective communication and model-parallel execution for multi-GPU and multi-node inference.
+    </span>
+    <span class="project-card-tags">
+      <span>Collectives</span>
+      <span>TP / PP / EP</span>
+      <span>Multi-node</span>
     </span>
   </a>
 

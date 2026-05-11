@@ -1,0 +1,54 @@
+---
+title: "Distributed Inference & Parallelism"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Scale-out inference projects around communication primitives, process groups,
+parallelism strategies, placement, and bandwidth-aware serving.
+</p>
+
+<div class="project-stack">
+  <!-- Add Collective Communication GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Collective Communication</span>
+    <span class="project-row-meta">all-reduce, all-gather, reduce-scatter, all-to-all, broadcast, process groups, and async communication</span>
+  </a>
+
+  <!-- Add Tensor Parallelism GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Tensor Parallelism</span>
+    <span class="project-row-meta">Sharding attention and MLP layers across GPUs for large-model inference</span>
+  </a>
+
+  <!-- Add Pipeline Parallelism GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Pipeline Parallelism</span>
+    <span class="project-row-meta">Layer partitioning, microbatching, stage scheduling, and cross-node serving</span>
+  </a>
+
+  <!-- Add Expert Parallelism GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Expert Parallelism</span>
+    <span class="project-row-meta">MoE expert placement, token routing, all-to-all dispatch, and load balancing</span>
+  </a>
+
+  <!-- Add Context Parallelism GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Context Parallelism</span>
+    <span class="project-row-meta">Long-context sequence sharding for attention and KV-cache-heavy workloads</span>
+  </a>
+
+  <!-- Add Data / Replica Parallelism GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Data / Replica Parallelism</span>
+    <span class="project-row-meta">Serving replicas, request routing, throughput scaling, and failover</span>
+  </a>
+
+  <!-- Add Topology-Aware Serving GitHub repo URL here -->
+  <a class="project-row-card" href="#" target="_blank" rel="noopener">
+    <span class="project-row-title">Topology-Aware Serving</span>
+    <span class="project-row-meta">Placement, communication overlap, bandwidth bottlenecks, and multi-node profiling</span>
+  </a>
+</div>

@@ -1,0 +1,41 @@
+---
+title: "Resume"
+comments: false
+toc: false
+---
+
+<div class="resume-toolbar">
+<span class="resume-kicker">Machine Learning Systems Engineer</span>
+<div class="resume-actions resume-actions-panel"><a class="resume-primary-action" href="Resume.pdf" download>Download Resume</a><a href="Resume.pdf" target="_blank" rel="noopener">Open PDF</a><a href="projects/index.html">View Projects</a><a href="https://github.com/AmanPandey28" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/aman-pandey-sanjeev-kumar-b55867b8/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+
+<div class="resume-viewer resume-viewer-primary">
+<object data="Resume.pdf#toolbar=1&navpanes=0&view=FitH" type="application/pdf">
+<iframe src="Resume.pdf#toolbar=1&navpanes=0&view=FitH" title="Aman Pandey Sanjeev Kumar Resume"></iframe>
+<p>Your browser cannot display the embedded PDF. <a href="Resume.pdf" target="_blank" rel="noopener">Open the resume PDF</a>.</p>
+</object>
+</div>
+
+## Technical Focus
+
+<div class="project-stack">
+  <a class="project-row-card" href="projects/gpu-kernels.html">
+    <span class="project-row-title">GPU Performance</span>
+    <span class="project-row-meta">CUDA C++, Triton, memory hierarchy, tiling, profiling, and kernel optimization</span>
+  </a>
+
+  <a class="project-row-card" href="projects/inference-optimization.html">
+    <span class="project-row-title">Inference Systems</span>
+    <span class="project-row-meta">KV cache, continuous batching, speculative decoding, quantization, and serving efficiency</span>
+  </a>
+
+  <a class="project-row-card" href="projects/dl-compilers.html">
+    <span class="project-row-title">Compilers & Frameworks</span>
+    <span class="project-row-meta">Graph capture, IR lowering, operator fusion, autograd, and PyTorch-style framework internals</span>
+  </a>
+
+  <a class="project-row-card" href="projects/distributed-inference-parallelism.html">
+    <span class="project-row-title">Distributed AI</span>
+    <span class="project-row-meta">Collectives, tensor/pipeline/expert/context parallelism, process groups, and topology-aware serving</span>
+  </a>
+</div>

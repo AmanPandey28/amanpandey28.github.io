@@ -259,6 +259,10 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
@@ -329,6 +333,16 @@ ul.task-list li input[type="checkbox"] {
 <p class="project-page-intro">
 Selected project areas across GPU performance, deep learning runtimes, compiler stacks, model architectures, and end-to-end ML systems work.
 </p>
+<section id="featured-systems-work" class="level2">
+<h2 class="anchored" data-anchor-id="featured-systems-work">Featured Systems Work</h2>
+<div class="featured-project-grid">
+<p><a class="featured-project-card" href="gpu-kernels.html"> <span class="featured-project-kicker">Kernel Performance</span> <span class="featured-project-title">GPU Kernel Benchmarks</span> <span class="featured-project-description"> Operator-level CUDA, Triton, and CuTe work focused on memory bandwidth, tiling, occupancy, and measurable speedups. </span> <span class="featured-project-footer">LayerNorm · GEMM · Vector Ops</span> </a></p>
+<p><a class="featured-project-card" href="dl-framework.html"> <span class="featured-project-kicker">Framework Internals</span> <span class="featured-project-title">Mini PyTorch-Style Framework</span> <span class="featured-project-description"> A compact framework path from tensors and reverse-mode autograd to modules, native kernels, and Python/C++ boundaries. </span> <span class="featured-project-footer">Tensors · Autograd · C++ Backend</span> </a></p>
+<p><a class="featured-project-card" href="distributed-inference-parallelism.html"> <span class="featured-project-kicker">Scale-Out Inference</span> <span class="featured-project-title">Distributed Inference Parallelism</span> <span class="featured-project-description"> Communication primitives and model-parallel execution for multi-GPU serving, including collectives, TP, PP, EP, CP, and placement. </span> <span class="featured-project-footer">Collectives · TP/PP/EP · Multi-node</span> </a></p>
+</div>
+</section>
+<section id="project-areas" class="level2">
+<h2 class="anchored" data-anchor-id="project-areas">Project Areas</h2>
 <div class="project-category-grid">
 <p><a class="project-category-card" href="gpu-kernels.html"> <span class="project-card-kicker">Performance</span> <span class="project-card-title">GPU Kernels</span> <span class="project-card-description"> CUDA C++, Triton, and CuTe DSL kernels for deep learning operators and memory-bound workloads. </span> <span class="project-card-tags"> <span>CUDA C++</span> <span>Triton</span> <span>CuTe DSL</span> </span> </a></p>
 <p><a class="project-category-card" href="runtime.html"> <span class="project-card-kicker">Serving</span> <span class="project-card-title">Runtime</span> <span class="project-card-description"> Runtime systems work around vLLM, SGLang, TensorRT, and TensorRT-LLM. </span> <span class="project-card-tags"> <span>vLLM</span> <span>SGLang</span> <span>TensorRT</span> </span> </a></p>
@@ -336,6 +350,7 @@ Selected project areas across GPU performance, deep learning runtimes, compiler 
 <p><a class="project-category-card" href="dl-compilers.html"> <span class="project-card-kicker">Compilation</span> <span class="project-card-title">DL Compilers</span> <span class="project-card-description"> Graph capture, IR lowering, fusion, scheduling, and compiler pipelines for tensor programs. </span> <span class="project-card-tags"> <span>MLIR</span> <span>XLA</span> <span>torch.compile</span> </span> </a></p>
 <p><a class="project-category-card" href="profiling.html"> <span class="project-card-kicker">Measurement</span> <span class="project-card-title">Profiling</span> <span class="project-card-description"> Nsight Systems, Nsight Compute, PyTorch Profiler, memory traces, and reproducible bottleneck analysis. </span> <span class="project-card-tags"> <span>Nsight</span> <span>PyTorch</span> <span>Perfetto</span> </span> </a></p>
 <p><a class="project-category-card" href="inference-optimization.html"> <span class="project-card-kicker">Efficiency</span> <span class="project-card-title">Inference Optimization</span> <span class="project-card-description"> Quantization, KV cache reuse, prefix caching, batching, speculative decoding, and serving efficiency. </span> <span class="project-card-tags"> <span>KV Cache</span> <span>Spec Decode</span> <span>Batching</span> </span> </a></p>
+<p><a class="project-category-card" href="distributed-inference-parallelism.html"> <span class="project-card-kicker">Scale-Out Systems</span> <span class="project-card-title">Distributed Inference &amp; Parallelism</span> <span class="project-card-description"> Collective communication and model-parallel execution for multi-GPU and multi-node inference. </span> <span class="project-card-tags"> <span>Collectives</span> <span>TP / PP / EP</span> <span>Multi-node</span> </span> </a></p>
 <p><a class="project-category-card" href="transformers.html"> <span class="project-card-kicker">Architectures</span> <span class="project-card-title">Transformers</span> <span class="project-card-description"> Transformer implementations in NumPy and PyTorch, including attention variants and efficient architectures. </span> <span class="project-card-tags"> <span>Attention</span> <span>PyTorch</span> <span>NumPy</span> </span> </a></p>
 <p><a class="project-category-card" href="diffusion.html"> <span class="project-card-kicker">Generative Models</span> <span class="project-card-title">Diffusion</span> <span class="project-card-description"> Denoising models, schedulers, U-Nets, latent diffusion, and efficient sampling experiments. </span> <span class="project-card-tags"> <span>DDPM</span> <span>U-Net</span> <span>Sampling</span> </span> </a></p>
 <p><a class="project-category-card" href="reinforcement-learning.html"> <span class="project-card-kicker">Learning Systems</span> <span class="project-card-title">Reinforcement Learning</span> <span class="project-card-description"> Policy gradients, actor-critic methods, value learning, and RL systems experiments. </span> <span class="project-card-tags"> <span>PPO</span> <span>DQN</span> <span>Actor-Critic</span> </span> </a></p>
@@ -343,6 +358,7 @@ Selected project areas across GPU performance, deep learning runtimes, compiler 
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

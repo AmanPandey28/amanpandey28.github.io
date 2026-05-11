@@ -84,6 +84,13 @@
     "text": "Here is how I wrote the kernel…\n```cpp global void matMul(float* A, float* B, float* C) { // My code here }"
   },
   {
+    "objectID": "puzzles.html",
+    "href": "puzzles.html",
+    "title": "Puzzles",
+    "section": "",
+    "text": "Practice tracks for sharpening GPU programming, ML systems intuition, algorithmic problem solving, and quantitative reasoning.\n\n\n GPU Programming LeetGPU  Browser-based GPU programming challenges for building comfort with kernels, memory movement, and parallel execution.   GPU Kernels Practice  \n Tensor Systems Tensara  Tensor and systems-oriented exercises for practicing the reasoning patterns behind modern AI workloads.   Tensors Systems AI  \n Mojo / GPU Mojo GPU Puzzles  Hands-on GPU puzzles in Mojo for learning kernel structure, memory hierarchy, and accelerator programming.   Mojo GPU Kernels  \n GPU Architecture GPU Demystified  A practical path for building intuition about GPU architecture, programming models, and performance behavior.   Architecture Performance CUDA  \n CUDA Intuition Sasha Rush GPU Puzzles  Interactive GPU puzzles by Sasha Rush for learning CUDA-style programming through small, focused exercises.   Numba CUDA Colab  \n Algorithms LeetCode  Core algorithm and data-structure practice for interviews, implementation fluency, and problem decomposition.   DSA Interviews Practice  \n Math + Code Project Euler  Mathematical programming problems that reward clean reasoning, efficient algorithms, and numerical insight.   Math Algorithms Reasoning  \n Quant Reasoning Jane Street Puzzles  High-quality probability, logic, and optimization puzzles for practicing precise quantitative thinking.   Logic Probability Optimization  \n Problem Solving Brain Stellar  A puzzle archive for building broad reasoning strength across math, logic, and programming-style challenges.   Puzzles Logic Math"
+  },
+  {
     "objectID": "projects/transformers.html",
     "href": "projects/transformers.html",
     "title": "Transformers",

@@ -36,6 +36,19 @@ algorithmic problem solving, and quantitative reasoning.
     </span>
   </a>
 
+  <a class="project-category-card" href="https://www.tensortonic.com/profile/aman28" target="_blank" rel="noopener">
+    <span class="project-card-kicker">ML Systems and Deep Learning Practice</span>
+    <span class="project-card-title">TesnorTonic</span>
+    <span class="project-card-description">
+      Personal TensorTonic profile for tracking tensor puzzle progress, practice, and systems-oriented problem solving.
+    </span>
+    <span class="project-card-tags">
+      <span>Kernels</span>
+      <span>PyTorch</span>
+      <span>Deep Learning</span>
+    </span>
+  </a>
+
   <a class="project-category-card" href="https://puzzles.modular.com/" target="_blank" rel="noopener">
     <span class="project-card-kicker">Mojo / GPU</span>
     <span class="project-card-title">Mojo GPU Puzzles</span>

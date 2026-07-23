@@ -5,9 +5,9 @@ toc: false
 ---
 
 <p class="project-page-intro">
-Curated learning resources for GPU programming, ML systems, inference
-optimization, and performance engineering. The GPU programming section is
-organized from foundations to frontier kernel work.
+Curated learning resources for GPU programming, MLIR, ML systems, inference
+optimization, and performance engineering. Each section is organized as its
+own learning track so compiler, kernel, and systems resources stay easy to scan.
 </p>
 
 <div class="project-category-grid">
@@ -23,6 +23,20 @@ organized from foundations to frontier kernel work.
       <span>CUDA</span>
       <span>Triton</span>
       <span>Performance</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="#mlir">
+    <span class="project-card-kicker">Compilers / IR / Lowering</span>
+    <span class="project-card-title">MLIR</span>
+    <span class="project-card-description">
+      A segmented MLIR path covering official docs, hands-on tutorials, blogs,
+      videos, compiler-stack case studies, papers, and research/social posts.
+    </span>
+    <span class="project-card-tags">
+      <span>Dialects</span>
+      <span>Lowering</span>
+      <span>IREE</span>
     </span>
   </a>
 </div>
@@ -258,5 +272,206 @@ organized from foundations to frontier kernel work.
   <a class="project-row-card" href="https://forejune.co/cuda/" target="_blank" rel="noopener">
     <span class="project-row-title">CUDA Notes</span>
     <span class="project-row-meta">Compact notes and examples for CUDA programming concepts</span>
+  </a>
+</div>
+
+## MLIR
+
+### Official Docs, Repos, and Reference Material
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://mlir.llvm.org/pubs/" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Related Publications</span>
+    <span class="project-row-meta">Official MLIR publication index for the compiler framework, dialects, lowering, and research lineage</span>
+  </a>
+
+  <a class="project-row-card" href="https://share.google/c1UFDWd6Syp5JxKDt" target="_blank" rel="noopener">
+    <span class="project-row-title">IREE</span>
+    <span class="project-row-meta">Retargetable MLIR-based machine learning compiler and runtime toolkit</span>
+  </a>
+
+  <a class="project-row-card" href="https://iree.dev/community/blog/#iree-mlir-linalg-tutorial" target="_blank" rel="noopener">
+    <span class="project-row-title">IREE MLIR Linalg Tutorial</span>
+    <span class="project-row-meta">IREE learning material for MLIR Linalg and compiler lowering paths</span>
+  </a>
+
+  <a class="project-row-card" href="https://developers.google.com/mlir-sparsifier/guides/intro" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Sparsifier</span>
+    <span class="project-row-meta">Google guide for sparse tensor compilation concepts and MLIR sparsifier workflows</span>
+  </a>
+
+  <a class="project-row-card" href="https://onnx.ai/onnx-mlir/" target="_blank" rel="noopener">
+    <span class="project-row-title">ONNX-MLIR</span>
+    <span class="project-row-meta">Representation and reference lowering of ONNX models in MLIR compiler infrastructure</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/onnx/onnx-mlir" target="_blank" rel="noopener">
+    <span class="project-row-title">ONNX-MLIR GitHub</span>
+    <span class="project-row-meta">Source repository for ONNX model lowering, compiler passes, and runtime integration</span>
+  </a>
+</div>
+
+### Tutorials and Hands-On Learning
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.jeremykun.com/2023/08/10/mlir-getting-started/" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR: Getting Started</span>
+    <span class="project-row-meta">Jeremy Kun's beginner-friendly entry into MLIR concepts, IR reading, and compiler toolchain setup</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/j2kun/mlir-tutorial" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR for Beginners Tutorial</span>
+    <span class="project-row-meta">Hands-on GitHub tutorial for building intuition around MLIR dialects, lowering, and passes</span>
+  </a>
+
+  <a class="project-row-card" href="http://lastweek.io/notes/MLIR/" target="_blank" rel="noopener">
+    <span class="project-row-title">Last Week Notes: MLIR</span>
+    <span class="project-row-meta">Compact MLIR notes useful for quickly revisiting syntax, concepts, and compiler structure</span>
+  </a>
+
+  <a class="project-row-card" href="https://srikantharun.github.io/mlir-optimization" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Optimization Passes</span>
+    <span class="project-row-meta">Developer-oriented guide to writing and reasoning about MLIR optimization passes</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/kairos-yu/tvm_mlir_learn?tab=readme-ov-file" target="_blank" rel="noopener">
+    <span class="project-row-title">TVM and MLIR Learning Notes</span>
+    <span class="project-row-meta">Learning repository for connecting TVM, MLIR, tensor compilers, and lowering ideas</span>
+  </a>
+</div>
+
+### Blogs and Articles
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.cs.cornell.edu/courses/cs6120/2023fa/blog/mlir/" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR: A Compiler Infrastructure for the End of Moore's Law</span>
+    <span class="project-row-meta">Cornell CS6120 article explaining MLIR's motivation, dialect design, and role in heterogeneous computing</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.modular.com/blog/democratizing-ai-compute-part-8-what-about-the-mlir-compiler-infrastructure" target="_blank" rel="noopener">
+    <span class="project-row-title">What About the MLIR Compiler Infrastructure?</span>
+    <span class="project-row-meta">Modular article on MLIR's role in AI compiler infrastructure and portable accelerator stacks</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.modular.com/blog/increasing-development-velocity-of-giant-ai-models" target="_blank" rel="noopener">
+    <span class="project-row-title">Increasing Development Velocity of Giant AI Models</span>
+    <span class="project-row-meta">Modular compiler-engineering case study on scaling large AI model development</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.modular.com/blog/increasing-development-velocity-of-giant-ai-models-part-2" target="_blank" rel="noopener">
+    <span class="project-row-title">Increasing Development Velocity of Giant AI Models, Part 2</span>
+    <span class="project-row-meta">Follow-up on MLIR attribute design, model weights, and compiler infrastructure ergonomics</span>
+  </a>
+
+  <a class="project-row-card" href="https://karthick.ai/blog/2025/Learn-By-Doing-Torchinductor-Reduction/" target="_blank" rel="noopener">
+    <span class="project-row-title">Learn by Doing: TorchInductor Reduction Kernels</span>
+    <span class="project-row-meta">Walkthrough of TorchInductor reduction kernel generation and compiler-produced GPU code</span>
+  </a>
+
+  <a class="project-row-card" href="https://rocm.blogs.amd.com/software-tools-optimization/flydsl-python-native/README.html" target="_blank" rel="noopener">
+    <span class="project-row-title">FlyDSL: MLIR-Native GPU Kernel Development</span>
+    <span class="project-row-meta">AMD ROCm article on a Python-first, MLIR-native DSL for expert GPU kernel development and tuning</span>
+  </a>
+
+  <a class="project-row-card" href="https://developer.nvidia.com/blog/accelerating-long-context-model-training-in-jax-and-xla" target="_blank" rel="noopener">
+    <span class="project-row-title">Accelerating Long-Context Model Training in JAX and XLA</span>
+    <span class="project-row-meta">NVIDIA technical blog on compiler/runtime techniques for long-context training in JAX and XLA</span>
+  </a>
+
+  <a class="project-row-card" href="https://medium.com/nuro/ftl-model-compiler-framework-d6b85c670f67" target="_blank" rel="noopener">
+    <span class="project-row-title">FTL Model Compiler Framework</span>
+    <span class="project-row-meta">Nuro article on an ML compiler framework and production compiler design concerns</span>
+  </a>
+</div>
+
+### Videos and Talks
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.youtube.com/playlist?list=PLlKj-4rp1Gz1Vt3onHU_SLjDwn51UsXrG" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Video Playlist</span>
+    <span class="project-row-meta">Playlist of MLIR talks and tutorials for building compiler infrastructure intuition</span>
+  </a>
+
+  <a class="project-row-card" href="https://youtube.com/watch?v=dae1cvzAoIM" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Beginner-Friendly Tutorial 2: Part 1</span>
+    <span class="project-row-meta">Alex Singer tutorial continuing MLIR motivation, IR reading, dialect lowering, and optimization workflows</span>
+  </a>
+
+  <a class="project-row-card" href="https://youtu.be/erQu0vkZdns" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Beginner-Friendly Tutorial 2: Part 2</span>
+    <span class="project-row-meta">Follow-up Alex Singer tutorial with more beginner-friendly MLIR lowering and optimization detail</span>
+  </a>
+
+  <a class="project-row-card" href="https://share.google/dS8WvFxQOpPLolesB" target="_blank" rel="noopener">
+    <span class="project-row-title">Deep Dive into Cruise's ML Compiler</span>
+    <span class="project-row-meta">NVIDIA GTC talk on building an extensible modular ML compiler using open-source compiler technologies</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.edge-ai-vision.com/2025/06/onnx-and-python-to-c-state-of-the-art-graph-compilation-a-presentation-from-quadric/" target="_blank" rel="noopener">
+    <span class="project-row-title">ONNX and Python to C++ Graph Compilation</span>
+    <span class="project-row-meta">Presentation on graph compilation for edge AI, ONNX, Python frontends, and C++ code generation</span>
+  </a>
+</div>
+
+### Papers and Research
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://arxiv.org/pdf/2301.01333" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR-Based Compiler Research Paper</span>
+    <span class="project-row-meta">Compiler paper saved from the MLIR channel for deeper reading on MLIR-style compiler systems</span>
+  </a>
+
+  <a class="project-row-card" href="https://share.google/B6SXpEaQBQFXbTwZx" target="_blank" rel="noopener">
+    <span class="project-row-title">From Loop Nests to Silicon: MLIR-AIR</span>
+    <span class="project-row-meta">Research on mapping AI workloads onto AMD NPUs with MLIR-AIR, explicit data movement, and spatial architectures</span>
+  </a>
+
+  <a class="project-row-card" href="https://fredrikbk.com/publications/scorch.pdf" target="_blank" rel="noopener">
+    <span class="project-row-title">Scorch</span>
+    <span class="project-row-meta">Research PDF from the MLIR resource channel for compiler and accelerator systems reading</span>
+  </a>
+
+  <a class="project-row-card" href="https://share.google/K4M8wLr93WzgmrihN" target="_blank" rel="noopener">
+    <span class="project-row-title">Weight Block Sparsity</span>
+    <span class="project-row-meta">Training, compilation, and AI engine accelerator resource focused on structured sparsity</span>
+  </a>
+</div>
+
+### Other Posts and Case Studies
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.linkedin.com/posts/patrick-toulme-150b041a5_from-jax-to-vliw-tracing-a-computation-through-activity-7410814951709265920-LFpY" target="_blank" rel="noopener">
+    <span class="project-row-title">From JAX to VLIW: Tracing a TPU Compiler Stack</span>
+    <span class="project-row-meta">Post tracing JAX through HLO, MLIR, and TPU compiler codegen down toward VLIW execution</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.linkedin.com/posts/patrick-toulme-150b041a5_when-xla-isnt-enough-from-pallas-to-vliw-activity-7416230577693261824-4kSW" target="_blank" rel="noopener">
+    <span class="project-row-title">When XLA Is Not Enough: Pallas to VLIW</span>
+    <span class="project-row-meta">Post on TPU compiler limits, algorithmic rewrites, Pallas, and low-level codegen realities</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.linkedin.com/posts/patrick-toulme-150b041a5_i-built-a-tpu-from-scratch-custom-verilog-ugcPost-7423473976779296768-m4pu" target="_blank" rel="noopener">
+    <span class="project-row-title">A TPU from Scratch: JAX to VLIW</span>
+    <span class="project-row-meta">Case study connecting custom RTL, JAX, HLO, MLIR, assembly, VLIW, binary codegen, and PJRT backend work</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.linkedin.com/posts/cerebras-systems_an-mlir-lowering-pipeline-for-stencils-at-activity-7423074893363138560-jta4" target="_blank" rel="noopener">
+    <span class="project-row-title">MLIR Lowering Pipeline for Wafer-Scale Stencils</span>
+    <span class="project-row-meta">Cerebras/EPCC post on MLIR lowering for stencil workloads on wafer-scale systems</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.linkedin.com/posts/gautamrbharadwaj_i-built-a-gpu-compiler-from-scratch-and-activity-7432244959329607680-Psgl" target="_blank" rel="noopener">
+    <span class="project-row-title">GPU Compiler from Scratch</span>
+    <span class="project-row-meta">Post about a browser-executable GPU compiler pipeline from source code to MLIR IR, register allocation, and binary instructions</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.linkedin.com/posts/dr-javed-absar-41b49b1_hexagon-mlir-an-ai-compilation-stack-for-activity-7432364035519533056-CICP" target="_blank" rel="noopener">
+    <span class="project-row-title">Hexagon-MLIR</span>
+    <span class="project-row-meta">Post on an AI compilation stack for Qualcomm neural processors and MLIR-based lowering</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.linkedin.com/posts/polyblocks-a-compiler-infrastructure-for-share-7437031544671694848-Dg2B" target="_blank" rel="noopener">
+    <span class="project-row-title">PolyBlocks Compiler Infrastructure</span>
+    <span class="project-row-meta">Post on reusable compiler infrastructure for AI chips and PyTorch/JAX compilers for new accelerators</span>
   </a>
 </div>

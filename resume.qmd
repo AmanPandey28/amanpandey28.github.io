@@ -19,23 +19,23 @@ toc: false
 ## Technical Focus
 
 <div class="project-stack">
-  <a class="project-row-card" href="projects/gpu-kernels.html">
-    <span class="project-row-title">GPU Performance</span>
-    <span class="project-row-meta">CUDA C++, Triton, memory hierarchy, tiling, profiling, and kernel optimization</span>
+  <a class="project-row-card" href="https://github.com/AmanPandey28/GPU-Mode/tree/main" target="_blank" rel="noopener">
+    <span class="project-row-title">Agentic CUDA Engineering</span>
+    <span class="project-row-meta">B200 QR decomposition workflow with OpenCode, Codex, LiteLLM, worktree handoffs, validation gates, and measurable kernel speedups</span>
   </a>
 
-  <a class="project-row-card" href="projects/inference-optimization.html">
-    <span class="project-row-title">Inference Systems</span>
-    <span class="project-row-meta">KV cache, continuous batching, speculative decoding, quantization, and serving efficiency</span>
+  <a class="project-row-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener">
+    <span class="project-row-title">Cross-DSL GPU Kernels</span>
+    <span class="project-row-meta">RMSNorm, decode GEMV/GEMM, and RoPE-KV kernels across CUDA C++, Triton, CuTe DSL, PyTorch references, and cuBLAS baselines</span>
   </a>
 
-  <a class="project-row-card" href="projects/dl-compilers.html">
-    <span class="project-row-title">Compilers & Frameworks</span>
-    <span class="project-row-meta">Graph capture, IR lowering, operator fusion, autograd, and PyTorch-style framework internals</span>
+  <a class="project-row-card" href="https://github.com/AmanPandey28/nano_vllm_pp" target="_blank" rel="noopener">
+    <span class="project-row-title">Single-GPU LLM Runtime</span>
+    <span class="project-row-meta">nano-vLLM++ with prefill/decode scheduling, KV-cache metadata, BF16/NF4/INT8 loading, and TTFT/TPOT serving metrics</span>
   </a>
 
-  <a class="project-row-card" href="projects/distributed-inference-parallelism.html">
-    <span class="project-row-title">Distributed AI</span>
-    <span class="project-row-meta">Collectives, tensor/pipeline/expert/context parallelism, process groups, and topology-aware serving</span>
+  <a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener">
+    <span class="project-row-title">FlashAttention-2 in Triton</span>
+    <span class="project-row-meta">Forward/backward attention kernels for 4K context with online softmax, recomputed backward, autotuning, and PyTorch SDPA comparison</span>
   </a>
 </div>

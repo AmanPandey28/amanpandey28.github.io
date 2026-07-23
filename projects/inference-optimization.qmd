@@ -10,6 +10,11 @@ time-to-first-token, and sustained decode performance.
 </p>
 
 <div class="project-stack">
+  <a class="project-row-card" href="https://github.com/AmanPandey28/nano_vllm_pp" target="_blank" rel="noopener">
+    <span class="project-row-title">nano-vLLM++ Serving Metrics</span>
+    <span class="project-row-meta">TTFT, TPOT, end-to-end latency, queue depth, KV-block telemetry, and BF16/NF4/INT8 loading paths</span>
+  </a>
+
   <!-- Add Quantization GitHub repo URL here -->
   <a class="project-row-card" href="#" target="_blank" rel="noopener">
     <span class="project-row-title">Quantization</span>

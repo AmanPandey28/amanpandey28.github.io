@@ -18,7 +18,7 @@
     "href": "resume.html#technical-focus",
     "title": "Resume",
     "section": "Technical Focus",
-    "text": "Technical Focus\n\n GPU Performance CUDA C++, Triton, memory hierarchy, tiling, profiling, and kernel optimization \n Inference Systems KV cache, continuous batching, speculative decoding, quantization, and serving efficiency \n Compilers & Frameworks Graph capture, IR lowering, operator fusion, autograd, and PyTorch-style framework internals \n Distributed AI Collectives, tensor/pipeline/expert/context parallelism, process groups, and topology-aware serving"
+    "text": "Technical Focus\n\n Agentic CUDA Engineering B200 QR decomposition workflow with OpenCode, Codex, LiteLLM, worktree handoffs, validation gates, and measurable kernel speedups \n Cross-DSL GPU Kernels RMSNorm, decode GEMV/GEMM, and RoPE-KV kernels across CUDA C++, Triton, CuTe DSL, PyTorch references, and cuBLAS baselines \n Single-GPU LLM Runtime nano-vLLM++ with prefill/decode scheduling, KV-cache metadata, BF16/NF4/INT8 loading, and TTFT/TPOT serving metrics \n FlashAttention-2 in Triton Forward/backward attention kernels for 4K context with online softmax, recomputed backward, autotuning, and PyTorch SDPA comparison"
   },
   {
     "objectID": "projects/dl-framework.html",
@@ -39,7 +39,7 @@
     "href": "projects/index.html#featured-systems-work",
     "title": "Projects",
     "section": "Featured Systems Work",
-    "text": "Featured Systems Work\n\n Kernel Performance GPU Kernel Benchmarks  Operator-level CUDA, Triton, and CuTe work focused on memory bandwidth, tiling, occupancy, and measurable speedups.  LayerNorm · GEMM · Vector Ops \n Framework Internals Mini PyTorch-Style Framework  A compact framework path from tensors and reverse-mode autograd to modules, native kernels, and Python/C++ boundaries.  Tensors · Autograd · C++ Backend \n Scale-Out Inference Distributed Inference Parallelism  Communication primitives and model-parallel execution for multi-GPU serving, including collectives, TP, PP, EP, CP, and placement.  Collectives · TP/PP/EP · Multi-node"
+    "text": "Featured Systems Work\n\n Agentic CUDA Engineering GPU Mode B200 QR Decomposition  Multi-agent CUDA workflow for batched FP32 QR on B200, with permission gates, worktree handoffs, smoke tests, and reproducible Modal/Popcorn runs.  23.7% geomean reduction · Householder QR · B200 \n Cross-DSL Kernels LLM Inference Kernel Engineering  FP32 RMSNorm, decode GEMV/GEMM, and RoPE-KV kernels implemented across CUDA C++, Triton, and CuTe DSL with shared tests and CUDA-event benchmarks.  CUDA C++ · Triton · CuTe DSL · cuBLASLt \n Inference Runtime nano-vLLM++  Single-GPU LLM runtime with request state machines, prefill/decode separation, KV-cache metadata, quantized loading paths, and OpenAI-compatible endpoints.  KV cache · NF4/INT8 · TTFT/TPOT metrics \n Attention Kernels FlashAttention-2 in Triton  Fused Triton FA2 forward/backward implementation with online softmax, recomputed backward attention weights, causal masking, and autotuned kernels.  4K context · 16.2 TFLOP/s · Forward/backward"
   },
   {
     "objectID": "projects/index.html#project-areas",
@@ -60,14 +60,14 @@
     "href": "projects/gpu-kernels.html",
     "title": "GPU Kernels",
     "section": "",
-    "text": "Operator-level performance work across CUDA C++, Triton, and CuTe DSL.\n\n\n  LayerNorm Kernel Triton, CuTe DSL \n  Vector Addition Triton, CUDA C++ \n  GEMM CUDA C++, Triton, CuTe DSL"
+    "text": "Operator-level performance work across CUDA C++, Triton, and CuTe DSL.\n\n\n GPU Mode B200 QR Decomposition Agentic CUDA workflow, batched FP32 Householder QR, Modal/Popcorn runs, and 23.7% local geomean reduction \n Cross-DSL LLM Kernels FP32 RMSNorm, decode GEMV/GEMM, RoPE-KV, CUDA C++, Triton, CuTe DSL, and cuBLAS baselines \n FlashAttention-2 Triton Fused forward/backward attention kernels with online softmax, recomputed backward, causal masking, and autotuning \n  LayerNorm Kernel Triton, CuTe DSL \n  Vector Addition Triton, CUDA C++ \n  GEMM CUDA C++, Triton, CuTe DSL"
   },
   {
     "objectID": "projects/runtime.html",
     "href": "projects/runtime.html",
     "title": "Runtime",
     "section": "",
-    "text": "Inference runtime systems and serving engines for efficient model deployment.\n\n\n  vLLM Paged attention and high-throughput LLM serving \n  SGLang Structured generation and serving workflows \n  TensorRT Optimized inference engines \n  TensorRT-LLM LLM-specific serving and engine optimization"
+    "text": "Inference runtime systems and serving engines for efficient model deployment.\n\n\n nano-vLLM++ Single-GPU runtime with request state machines, prefill/decode separation, KV-cache metadata, quantized loading, and OpenAI-compatible endpoints \n  vLLM Paged attention and high-throughput LLM serving \n  SGLang Structured generation and serving workflows \n  TensorRT Optimized inference engines \n  TensorRT-LLM LLM-specific serving and engine optimization"
   },
   {
     "objectID": "projects/cuda-kernel.html",
@@ -95,7 +95,7 @@
     "href": "projects/transformers.html",
     "title": "Transformers",
     "section": "",
-    "text": "Transformer projects covering from-scratch implementations, PyTorch models, attention mechanics, architecture variants, and efficiency-focused experiments.\n\n\n  Transformer in NumPy Tokenization, embeddings, attention, MLP blocks, layer norm, and training loop basics \n  Transformer in PyTorch Clean encoder/decoder implementation with modular attention and training utilities \n  Attention Variants MHA, MQA, GQA, sliding-window attention, rotary embeddings, and KV-cache-aware decoding \n  Efficient Architectures Long-context, sparse, linear-attention, and memory-efficient transformer experiments"
+    "text": "Transformer projects covering from-scratch implementations, PyTorch models, attention mechanics, architecture variants, and efficiency-focused experiments.\n\n\n FlashAttention-2 in Triton Memory-efficient attention with tiled QK/V SRAM movement, online softmax, causal masking, and recomputed backward \n  Transformer in NumPy Tokenization, embeddings, attention, MLP blocks, layer norm, and training loop basics \n  Transformer in PyTorch Clean encoder/decoder implementation with modular attention and training utilities \n  Attention Variants MHA, MQA, GQA, sliding-window attention, rotary embeddings, and KV-cache-aware decoding \n  Efficient Architectures Long-context, sparse, linear-attention, and memory-efficient transformer experiments"
   },
   {
     "objectID": "projects/dnn-from-scratch.html",
@@ -130,7 +130,7 @@
     "href": "projects/inference-optimization.html",
     "title": "Inference Optimization",
     "section": "",
-    "text": "Techniques for improving serving latency, throughput, memory efficiency, time-to-first-token, and sustained decode performance.\n\n\n  Quantization FP8, INT8, INT4, AWQ/GPTQ-style compression, and accuracy-performance tradeoffs \n  KV Cache Optimization Paged KV blocks, reuse across requests, offloading, eviction, MQA, and GQA \n  Prefix Caching Automatic prefix reuse for shared prompts and retrieval-heavy workloads \n  Continuous Batching Dynamic scheduling for mixed prefill/decode workloads and higher GPU utilization \n  Speculative Decoding Draft-and-verify decoding, EAGLE-style methods, and acceptance-rate tuning \n  Disaggregated Serving Separating prefill and decode paths for scalable, latency-aware inference"
+    "text": "Techniques for improving serving latency, throughput, memory efficiency, time-to-first-token, and sustained decode performance.\n\n\n nano-vLLM++ Serving Metrics TTFT, TPOT, end-to-end latency, queue depth, KV-block telemetry, and BF16/NF4/INT8 loading paths \n  Quantization FP8, INT8, INT4, AWQ/GPTQ-style compression, and accuracy-performance tradeoffs \n  KV Cache Optimization Paged KV blocks, reuse across requests, offloading, eviction, MQA, and GQA \n  Prefix Caching Automatic prefix reuse for shared prompts and retrieval-heavy workloads \n  Continuous Batching Dynamic scheduling for mixed prefill/decode workloads and higher GPU utilization \n  Speculative Decoding Draft-and-verify decoding, EAGLE-style methods, and acceptance-rate tuning \n  Disaggregated Serving Separating prefill and decode paths for scalable, latency-aware inference"
   },
   {
     "objectID": "projects/diffusion.html",

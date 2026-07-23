@@ -1,0 +1,216 @@
+\RequirePackage{fix-cm}
+% Resume in LaTeX
+% Author : Aman Pandey Sanjeev Kumar
+% Template based on Jake Gutierrez's resume (MIT Licensed)
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{tikz}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\titleformat{\section}{\vspace{-2pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+\setlength{\parskip}{0pt}
+\setlength{\itemsep}{0pt}
+\renewcommand{\small}{\fontsize{8.5}{10.3}\selectfont}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.5in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\normalsize#3} & {\normalsize #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\color{black}$\star$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+    \href{https://amanpandey28.github.io/}{\Large{\scshape\textbf{\color{black}Aman Pandey Sanjeev Kumar}}} \\[ 5 pt]
+
+    %{\small
+    %\textbf{\textit{Full-time Availability:}} 
+    %\textcolor{black}{\textbf{Starting May 2026}}} \\[1ex]
+
+    \small \raisebox{-0.1\height}{\color{black}\faPhone} +1 (765)-543-8366 ~
+    \href{mailto:amanpandey.sanjeevk@gmail.com}{\raisebox{-0.2\height}{\color{black}\faEnvelope} \underline{amanpandey.sanjeevk@gmail.com}} ~
+    \href{https://www.linkedin.com/in/aman-pandey-sanjeev-kumar-b55867b8/}{\raisebox{-0.2\height}{\color{black}\faLinkedin} \underline{LinkedIn}} ~
+    \href{https://github.com/AmanPandey28}{\raisebox{-0.2\height}{\color{black}\faGithub} \underline{GitHub}} ~
+    \href{https://amanpandey28.github.io/}{\raisebox{-0.2\height}{\color{black}\faGlobe} \underline{Website}}
+\end{center}
+\vspace{-14pt}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\color{black}PURDUE UNIVERSITY} & \textbf{West Lafayette, Indiana} \\
+    \textbf{Master of Science in Electrical and Computer Engineering} & \textbf{May 2026} \\
+    \textit{\textbf{Specialization:} Artificial Intelligence \& Machine Learning} & \\
+    \\[-2ex]
+    \textbf{Master of Science in Industrial Engineering} & \\
+    \textit{\textbf{Specialization:} Operations Research} &
+  \end{tabular*}
+  \vspace{-8pt}
+
+  \resumeItemListStart
+    \resumeItem{\textbf{Relevant Coursework:} Machine Learning Systems, Deep Learning, Reinforcement Learning, AI Hardware, Linear Programming, Linear Algebra , Advanced Probability}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-18pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.0in, label={}]
+\item \small{
+    \textbf{\color{black}Programming \& GPU:}
+    Python, Pytorch, C++, CUDA C++, Triton, CuTe DSL, CUTLASS, cuBLAS/cuBLASLt \\[0.35ex]
+
+    \textbf{\color{black}AI Agents \& Serving:}
+    Claude Code, OpenCode, Codex, OpenRouter, LiteLLM, PyTorch, vLLM, SGLang, TensorRT-LLM, FlashInfer \\[0.35ex]
+
+    \textbf{\color{black}Agentic Systems:}
+    tool calling, MCP servers, model routing, eval harnesses, observability, HITL approvals, RAG integrations \\[0.35ex]
+
+    \textbf{\color{black}Systems \& Deployment:}
+    Git, GitHub, Linux, Bash, Docker, Kubernetes, Slurm \\[0.35ex]
+
+    \textbf{\color{black}Compilers \& Profiling:}
+    MLIR, OpenXLA, TVM, Nsight Compute, Nsight Systems
+}
+\end{itemize}
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{\color{black}GPU Mode B200 QR Decomposition: Long Horizon Agentic CUDA Engineering}
+  $|$ \href{https://github.com/AmanPandey28/GPU-Mode/tree/main}{\textit{\color{black}GitHub}}
+  $|$ \href{https://www.gpumode.com/leaderboard/774?tab=rankings}{\textit{\color{black}Challenge}}}{}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{multi-agent CUDA workflow} using OpenCode, Codex, LiteLLM routes, and coding/review agents.}
+    \resumeItem{Designed \textbf{permission gates, worktree handoffs}, runbooks, and reject logs for reproducible agent output.}
+    \resumeItem{Wrapped \textbf{Modal B200/Popcorn} actions with budget checks, source hashes, smoke tests, and safe artifacts.}
+    \resumeItem{Implemented \textbf{batched FP32 QR kernels} with compact-Householder n=32/n=176 paths and \texttt{torch.geqrf} fallbacks.}
+    \resumeItem{Reduced local geomean by \textbf{23.7\%} ($24.61\rightarrow18.79$ ms) while preserving reconstruction and orthogonality.}
+    \resumeItem{Validated triangularity, rank-deficient, clustered, mixed-batch, and seed-fuzz cases with repeatable gates.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\color{black}Cross-DSL GPU Kernel Engineering for LLM Inference}
+  $|$ \href{https://github.com/AmanPandey28/cross_dsl_kernels}{\textit{\color{black}GitHub}}}{}
+  \resumeItemListStart
+    \resumeItem{Implemented FP32 \textbf{RMSNorm, decode GEMV/GEMM, and RoPE--KV kernels} in \textbf{CUDA C++, Triton, and CuTe DSL}.}
+    \resumeItem{Built shared \textbf{PyTorch references, tests, CUDA-event benchmarks}, and \textbf{cuBLAS/cuBLASLt} decode baselines.}
+    \resumeItem{Profiled backend tradeoffs: CUDA RMSNorm neared \textbf{peak DRAM bandwidth}; Triton led mixed decode shapes.}
+    \resumeItem{Fused \textbf{RoPE, GQA page translation, and paged-KV writes in CUDA}, eliminating eager intermediates.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\color{black}nano-vLLM++: Single-GPU LLM Inference Runtime}
+  $|$ \href{https://github.com/AmanPandey28/nano_vllm_pp}{\textit{\color{black}GitHub}}}{}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{single-GPU inference runtime} with request state machines, prefill/decode separation, and token-budget scheduling.}
+    \resumeItem{Implemented \textbf{KV-cache metadata management} with fixed-size block tables, reference counting, and chained-hash prefix detection.}
+    \resumeItem{Added \textbf{BF16/NF4/INT8 loading} and per-channel INT8/packed-INT4 prototypes; NF4 cut Qwen3-0.6B memory \textbf{1.11$\rightarrow$0.53 GB}.}
+    \resumeItem{Exposed \textbf{OpenAI-compatible FastAPI endpoints} with \textbf{TTFT, TPOT, E2E}, queue-depth, and KV-block metrics.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\color{black}FlashAttention-2 Triton Implementation}
+  $|$ \href{https://github.com/AmanPandey28/triton-flash-attention}{\textit{\color{black}GitHub}}}{}
+  \resumeItemListStart
+    \resumeItem{Built a fused Triton FA2 kernel with causal masking and end-to-end \textbf{forward/backward passes} for 4K context.}
+    \resumeItem{Tiled $QK^T$ and $V$ to SRAM with online softmax, eliminating $O(N^2)$ HBM materialization bottlenecks.}
+    \resumeItem{Recomputed backward attention weights via saved \textbf{log-sum-exp}, avoiding $O(N^2)$ intermediate storage.}
+    \resumeItem{Profiled against PyTorch SDPA, utilizing \texttt{triton.autotune} to sustain \textbf{16.2 TFLOP/s} ($\sim$40\% of RTX 5050 peak).}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {\color{black}Teaching Assistant, IE 332: Computing in Industrial Engineering}{Aug 2023 – Dec 2025}
+  {Purdue University}{West Lafayette, Indiana}
+  \resumeItemListStart
+    \resumeItem{Led lab sessions for 75 students on Machine Learning algorithms, data pipelines, and supervised/unsupervised learning.}
+    \resumeItem{Taught relational database design, ERDs, SQL, and backend web development (HTML/CSS/JS/PHP/MySQL).}
+    \resumeItem{Guided student projects integrating ML with ERP, CRM, and SCM systems.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {\color{black}Research Assistant}{Oct 2024 -- Jan 2025}
+  {Purdue University$|$  \href{https://github.com/AmanPandey28/clean_priority_learning_validation}{\textit{\color{black} GitHub}}}
+  {West Lafayette, Indiana}
+  \resumeItemListStart
+    \resumeItem{Validated clean-priority learning theory in neural networks by showing early preference for clean over noisy labels.}
+    \resumeItem{Analyzed test error curves and sample-wise gradient trends under varying label noise.}
+    \resumeItem{Ran experiments on MNIST and CIFAR-10 with CNNs, FCNs, and ResNets to study learning behavior.}
+   % \resumeItem{Empirically supported clean-priority learning theory by demonstrating early preference for clean over noisy labels.}
+  \resumeItemListEnd
+      \vspace{5pt}
+
+\resumeSubheading
+  {\color{black}Data Science Researcher}{Jan 2024 – May 2024}
+  {Cisco X Purdue Data Mine}{West Lafayette, Indiana}
+  \resumeItemListStart
+    \resumeItem{Built forecast selection \& ensembling algorithms for 10k+ Cisco products, improving cost-weighted prediction accuracy by \textbf{3\%}.}
+    \resumeItem{Clustered PLIDs using \textbf{Gaussian Mixture Models} to refine forecast segmentation.}
+    \resumeItem{Applied Bayesian MCMC, MLE, and advanced calibration methods to optimize ensemble weighting.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

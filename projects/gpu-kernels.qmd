@@ -9,6 +9,21 @@ Operator-level performance work across CUDA C++, Triton, and CuTe DSL.
 </p>
 
 <div class="project-stack">
+  <a class="project-row-card" href="https://github.com/AmanPandey28/GPU-Mode/tree/main" target="_blank" rel="noopener">
+    <span class="project-row-title">GPU Mode B200 QR Decomposition</span>
+    <span class="project-row-meta">Agentic CUDA workflow, batched FP32 Householder QR, Modal/Popcorn runs, and 23.7% local geomean reduction</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener">
+    <span class="project-row-title">Cross-DSL LLM Kernels</span>
+    <span class="project-row-meta">FP32 RMSNorm, decode GEMV/GEMM, RoPE-KV, CUDA C++, Triton, CuTe DSL, and cuBLAS baselines</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener">
+    <span class="project-row-title">FlashAttention-2 Triton</span>
+    <span class="project-row-meta">Fused forward/backward attention kernels with online softmax, recomputed backward, causal masking, and autotuning</span>
+  </a>
+
   <!-- Add LayerNorm Kernel GitHub repo URL here -->
   <a class="project-row-card" href="#" target="_blank" rel="noopener">
     <span class="project-row-title">LayerNorm Kernel</span>

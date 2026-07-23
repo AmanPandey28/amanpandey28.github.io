@@ -1,0 +1,262 @@
+---
+title: "Resources"
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Curated learning resources for GPU programming, ML systems, inference
+optimization, and performance engineering. The GPU programming section is
+organized from foundations to frontier kernel work.
+</p>
+
+<div class="project-category-grid">
+  <a class="project-category-card" href="#gpu-programming">
+    <span class="project-card-kicker">CUDA / Triton / CuTe</span>
+    <span class="project-card-title">GPU Programming</span>
+    <span class="project-card-description">
+      A structured path through GPU architecture, CUDA fundamentals, Triton,
+      CUTLASS, CuTe DSL, GEMM, attention kernels, PTX, profiling, and modern
+      ML systems performance work.
+    </span>
+    <span class="project-card-tags">
+      <span>CUDA</span>
+      <span>Triton</span>
+      <span>Performance</span>
+    </span>
+  </a>
+</div>
+
+## GPU Programming
+
+### Start Here
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://github.com/wafer-ai/gpu-perf-engineering-resources" target="_blank" rel="noopener">
+    <span class="project-row-title">GPU Performance Engineering Resources</span>
+    <span class="project-row-meta">A broad curriculum for learning GPU performance engineering from fundamentals toward frontier AI-lab kernel work</span>
+  </a>
+
+  <a class="project-row-card" href="https://mlc.ai/modern-gpu-programming-for-mlsys/index.html" target="_blank" rel="noopener">
+    <span class="project-row-title">Modern GPU Programming for ML Systems</span>
+    <span class="project-row-meta">MLC course-style notes for writing modern GPU programs in the context of ML systems</span>
+  </a>
+
+  <a class="project-row-card" href="https://damek.github.io/random/basic-facts-about-gpus/" target="_blank" rel="noopener">
+    <span class="project-row-title">Basic Facts About GPUs</span>
+    <span class="project-row-meta">A concise mental model for GPU architecture, execution, memory hierarchy, and practical performance constraints</span>
+  </a>
+
+  <a class="project-row-card" href="https://modal.com/gpu-glossary/readme" target="_blank" rel="noopener">
+    <span class="project-row-title">Modal GPU Glossary</span>
+    <span class="project-row-meta">Quick reference for GPU terms, architecture vocabulary, serving concepts, and accelerator terminology</span>
+  </a>
+</div>
+
+### CUDA Foundations
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://youtube.com/playlist?list=PLxNPSjHT5qvtYRVdNN1yDcdSl39uHV_sU" target="_blank" rel="noopener">
+    <span class="project-row-title">Nick CUDA Crash Course</span>
+    <span class="project-row-meta">Fast practical introduction to CUDA programming and kernel structure</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/playlist?list=PLAwxTw4SYaPnFKojVQrmyOGFCqHTxfdv2" target="_blank" rel="noopener">
+    <span class="project-row-title">Udacity Intro to Parallel Programming</span>
+    <span class="project-row-meta">Classic foundations for parallel algorithms, CUDA kernels, scans, reductions, sorting, and GPU thinking</span>
+  </a>
+
+  <a class="project-row-card" href="https://youtube.com/playlist?list=PL5B692fm6--vWLhYPqLcEu6RF3hXjEyJr" target="_blank" rel="noopener">
+    <span class="project-row-title">NVIDIA Modern CUDA C++ Programming Class</span>
+    <span class="project-row-meta">Official NVIDIA CUDA training material covering modern CUDA C++ programming patterns</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/playlist?list=PL6RdenZrxrw-zNX7uuGppWETdxt_JxdMj" target="_blank" rel="noopener">
+    <span class="project-row-title">OLCF CUDA Training Series</span>
+    <span class="project-row-meta">HPC-oriented CUDA lessons from Oak Ridge, useful for serious systems and performance practice</span>
+  </a>
+
+  <a class="project-row-card" href="https://cvw.cac.cornell.edu/cuda-intro/cuda-concepts/index" target="_blank" rel="noopener">
+    <span class="project-row-title">Cornell Virtual Workshop: CUDA Concepts</span>
+    <span class="project-row-meta">Readable CUDA concept notes for kernels, grids, blocks, memory, and execution hierarchy</span>
+  </a>
+</div>
+
+### Triton, CuTe, CUTLASS, and DSLs
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://youtube.com/playlist?list=PL_NMDNzkCbLR69QafQUa6yTx-T-VPIoaZ" target="_blank" rel="noopener">
+    <span class="project-row-title">Triton GPU Kernels 101</span>
+    <span class="project-row-meta">Beginner-friendly Triton path with examples for writing custom ML kernels in Python</span>
+  </a>
+
+  <a class="project-row-card" href="https://youtube.com/playlist?list=PL16vydMdqFg8kOQk9rPAyi_MC6KL3C7x0" target="_blank" rel="noopener">
+    <span class="project-row-title">Triton Kernels Playlist</span>
+    <span class="project-row-meta">Common deep learning operators implemented as Triton kernels</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/watch?v=G6q719ck7ww" target="_blank" rel="noopener">
+    <span class="project-row-title">GPU Mode Lecture: CUTLASS</span>
+    <span class="project-row-meta">CUTLASS concepts, abstractions, and how production GEMM kernels are structured</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/watch?v=jGouxuAHIfQ" target="_blank" rel="noopener">
+    <span class="project-row-title">Learning CUTLASS the Hard Way</span>
+    <span class="project-row-meta">Deep dive into understanding CUTLASS by working through its abstractions and performance model</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/watch?v=9-dfte_N3yk" target="_blank" rel="noopener">
+    <span class="project-row-title">Getting Started with CuTe DSL</span>
+    <span class="project-row-meta">Practical entry point for NVIDIA CuTe DSL and layout-driven kernel programming</span>
+  </a>
+
+  <a class="project-row-card" href="https://shahfahad50951.github.io/writings/cute-layouts/" target="_blank" rel="noopener">
+    <span class="project-row-title">CuTe Layouts</span>
+    <span class="project-row-meta">Notes on CuTe layout algebra, a key idea behind modern CUTLASS and CuTe DSL kernels</span>
+  </a>
+</div>
+
+### GEMM and Tensor Cores
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://siboehm.com/articles/22/CUDA-MMM" target="_blank" rel="noopener">
+    <span class="project-row-title">How to Optimize a CUDA Matmul Kernel</span>
+    <span class="project-row-meta">Canonical step-by-step CUDA SGEMM optimization path toward cuBLAS-like performance</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.aleksagordic.com/blog/matmul" target="_blank" rel="noopener">
+    <span class="project-row-title">Inside NVIDIA GPUs: High-Performance Matmul Kernels</span>
+    <span class="project-row-meta">Architecture, PTX/SASS, warp tiling, asynchronous pipelines, and tensor-core matmul intuition</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.cloudrift.ai/blog/gpu-matmul-optimization" target="_blank" rel="noopener">
+    <span class="project-row-title">Modern GPU Matmul Optimization</span>
+    <span class="project-row-meta">Register tiling, vectorized loads, shared-memory staging, cp.async, TMA, warp specialization, split-K, and tensor cores</span>
+  </a>
+
+  <a class="project-row-card" href="https://salykova.github.io/gemm-gpu" target="_blank" rel="noopener">
+    <span class="project-row-title">Advanced Matrix Multiplication Optimization</span>
+    <span class="project-row-meta">CUDA SGEMM optimization with inline PTX, asynchronous memory copies, double buffering, and bank-conflict avoidance</span>
+  </a>
+
+  <a class="project-row-card" href="https://mlc.ai/modern-gpu-programming-for-mlsys/chapter_tensor_cores/index.html" target="_blank" rel="noopener">
+    <span class="project-row-title">Tensor Cores for ML Systems</span>
+    <span class="project-row-meta">Modern tensor-core programming concepts for ML workloads</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-4---breaking-sota" target="_blank" rel="noopener">
+    <span class="project-row-title">Matrix Multiplication on Blackwell: Breaking SOTA</span>
+    <span class="project-row-meta">Blackwell matmul optimization case study with cluster launch control and state-of-the-art performance targets</span>
+  </a>
+</div>
+
+### Attention and LLM Inference Kernels
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.lowlevelml.com/blog/flash-attention-1" target="_blank" rel="noopener">
+    <span class="project-row-title">FlashAttention from the Bottom Up</span>
+    <span class="project-row-meta">Low-level explanation of FlashAttention and why memory movement dominates attention performance</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/watch?v=zy8ChVd_oTM" target="_blank" rel="noopener">
+    <span class="project-row-title">FlashAttention in Triton from First Principles</span>
+    <span class="project-row-meta">Derives and implements FlashAttention with Triton, including the reasoning behind the algorithm</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/watch?v=JwUcZwPOCpA" target="_blank" rel="noopener">
+    <span class="project-row-title">CUTLASS and FlashAttention 3</span>
+    <span class="project-row-meta">GPU Mode lecture on CUTLASS and FlashAttention 3 implementation ideas</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/live/ZIEq-WTquy4" target="_blank" rel="noopener">
+    <span class="project-row-title">How FlashAttention 4 Works</span>
+    <span class="project-row-meta">Walkthrough of newer FlashAttention ideas and reverse-engineering attention performance</span>
+  </a>
+
+  <a class="project-row-card" href="https://pytorch.org/blog/flexattention/" target="_blank" rel="noopener">
+    <span class="project-row-title">PyTorch FlexAttention</span>
+    <span class="project-row-meta">PyTorch-native attention flexibility and performance for custom attention masks and patterns</span>
+  </a>
+
+  <a class="project-row-card" href="https://kyrieblunders.bearblog.dev/making-dr-grpo-go-brrr/" target="_blank" rel="noopener">
+    <span class="project-row-title">Making Dr GRPO Go Brrr</span>
+    <span class="project-row-meta">Fused decode-attention kernel work in an RL training loop, with practical microbenchmarking context</span>
+  </a>
+</div>
+
+### PTX, SASS, and Hardware Internals
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://philipfabianek.com/posts/cuda-ptx-introduction" target="_blank" rel="noopener">
+    <span class="project-row-title">A Gentle Introduction to CUDA PTX</span>
+    <span class="project-row-meta">CUDA compilation pipeline, PTX, SASS, and a hand-written PTX kernel playground</span>
+  </a>
+
+  <a class="project-row-card" href="https://gh.evko.io/crucible-notes/ptxas/intrinsics/tensor.html" target="_blank" rel="noopener">
+    <span class="project-row-title">Tensor Core Intrinsics: PTXAS Reverse Engineering Notes</span>
+    <span class="project-row-meta">Reference notes for tensor-core intrinsics, PTXAS behavior, register allocation, and instruction scheduling</span>
+  </a>
+
+  <a class="project-row-card" href="https://dev.to/sfahad/programming-hopper-gpus-the-memory-consistency-model-24m7" target="_blank" rel="noopener">
+    <span class="project-row-title">Programming Hopper GPUs: Memory Consistency Model</span>
+    <span class="project-row-meta">Hopper-era memory consistency and synchronization details for advanced kernel work</span>
+  </a>
+
+  <a class="project-row-card" href="https://verda.com/blog/nvfp4-nvidia-blackwell-intro#conclusion" target="_blank" rel="noopener">
+    <span class="project-row-title">NVFP4 Explained</span>
+    <span class="project-row-meta">Blackwell low-precision floating point, microscaling, and hardware-algorithm co-design</span>
+  </a>
+
+  <a class="project-row-card" href="https://research.colfax-intl.com/cutlass-tutorial-nvfp4-blockscaled-gemm-on-nvidia-rtx-pro-blackwell-gpus-sm12x/" target="_blank" rel="noopener">
+    <span class="project-row-title">NVFP4 Blockscaled GEMM with CUTLASS</span>
+    <span class="project-row-meta">CUTLASS tutorial for Blackwell-class NVFP4 blockscaled GEMM kernels</span>
+  </a>
+</div>
+
+### Profiling and Performance Analysis
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.youtube.com/watch?v=27vRMM5JcSg" target="_blank" rel="noopener">
+    <span class="project-row-title">Introduction to Performance Analysis for NVIDIA GPUs</span>
+    <span class="project-row-meta">Profiler-driven workflow for identifying common GPU performance bottlenecks</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.youtube.com/playlist?list=PLxVedhmuwLq0RiX3X4iF7D4WOVvYfNKDe" target="_blank" rel="noopener">
+    <span class="project-row-title">NHR PerfLab Seminar Series</span>
+    <span class="project-row-meta">Performance engineering talks across GPU programming, profiling, and HPC optimization</span>
+  </a>
+
+  <a class="project-row-card" href="https://docs.nvidia.com/cutlass/latest/media/docs/cpp/gemm_performance_measurement_methodology_guidelines.html" target="_blank" rel="noopener">
+    <span class="project-row-title">CUTLASS GEMM Performance Measurement Guidelines</span>
+    <span class="project-row-meta">Benchmarking methodology for GEMM kernels, measurement hygiene, and comparing against library baselines</span>
+  </a>
+
+  <a class="project-row-card" href="https://developer.nvidia.com/blog/kernel-fusion-in-nvidia-cuda-optimizing-memory-traffic-and-launch-overhead/" target="_blank" rel="noopener">
+    <span class="project-row-title">Kernel Fusion in CUDA</span>
+    <span class="project-row-meta">How fusion reduces memory traffic and launch overhead, with practical CUDA optimization patterns</span>
+  </a>
+</div>
+
+### Deep Dives and Reference Collections
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://www.dcbaslani.xyz/blog/gpu_masterclass/" target="_blank" rel="noopener">
+    <span class="project-row-title">The Feynman GPU Lectures</span>
+    <span class="project-row-meta">A bottom-up GPU masterclass from transistors and CUDA cores to Tensor Cores, Hopper, and Blackwell</span>
+  </a>
+
+  <a class="project-row-card" href="https://developer.nvidia.com/blog/author/bob-crovella/" target="_blank" rel="noopener">
+    <span class="project-row-title">Bob Crovella: NVIDIA Technical Blog</span>
+    <span class="project-row-meta">Author archive with practical CUDA explanations, performance notes, and NVIDIA platform guidance</span>
+  </a>
+
+  <a class="project-row-card" href="https://www.cudahandbook.com/book/ch1/our-approach" target="_blank" rel="noopener">
+    <span class="project-row-title">The CUDA Handbook</span>
+    <span class="project-row-meta">Book-style CUDA resource for building a durable understanding of GPU programming</span>
+  </a>
+
+  <a class="project-row-card" href="https://forejune.co/cuda/" target="_blank" rel="noopener">
+    <span class="project-row-title">CUDA Notes</span>
+    <span class="project-row-meta">Compact notes and examples for CUDA programming concepts</span>
+  </a>
+</div>

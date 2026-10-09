@@ -1,0 +1,33 @@
+---
+title: "Edge AI & Deployment"
+description: "MobileCLIP2 optimization and validation on Qualcomm QNN for LPCVC 2026."
+comments: false
+toc: false
+---
+
+<p class="project-page-intro">
+Model export, graph rewrites, precision tradeoffs, and on-device validation
+for inference beyond the GPU.
+</p>
+
+<div class="project-stack">
+  <a class="project-row-card" href="https://github.com/AmanPandey28/lpcv2026" target="_blank" rel="noopener">
+    <span class="project-row-title">MobileCLIP2 Optimization for Qualcomm QNN</span>
+    <span class="project-row-meta">LPCVC 2026: deployed MobileCLIP2-S2 as FP16 QNN DLCs on Qualcomm AI Hub's S22 Family target. Image/text P90 latencies were 14.51/3.99 ms (18.50 ms sum versus 35 ms), with 794/794 profiled operations on NPU.</span>
+  </a>
+</div>
+
+## Export &amp; Graph Optimization
+
+Built a static **PyTorch → ONNX opset-16 → QNN** pipeline with FastViT
+reparameterization and normalization, SDPA, and EOS rewrites. Correcting
+preprocessing raised fractional R@10 from 0.043 to 0.897.
+
+## Accuracy &amp; Device Validation
+
+Validated all **56 image and 211 text device outputs** at unchanged R@10 of
+**0.897470**, with image/text cosine similarity of **0.999863/0.999998**.
+
+Rejected calibrated W8A16 QDQ after image cosine similarity dropped to 0.811,
+and isolated an S22/v69 DLC-composition failure. These checks informed the
+deployment choice alongside latency measurements.

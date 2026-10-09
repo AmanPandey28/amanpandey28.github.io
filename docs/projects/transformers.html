@@ -334,7 +334,11 @@ ul.task-list li input[type="checkbox"] {
 Transformer projects covering from-scratch implementations, PyTorch models, attention mechanics, architecture variants, and efficiency-focused experiments.
 </p>
 <div class="project-stack">
-<p><a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener"> <span class="project-row-title">FlashAttention-2 in Triton</span> <span class="project-row-meta">Memory-efficient attention with tiled QK/V SRAM movement, online softmax, causal masking, and recomputed backward</span> </a></p>
+<p><a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener"> <span class="project-row-title">Triton FlashAttention-2: Forward Attention</span> <span class="project-row-meta">FA2-style forward attention with online softmax, FP16 MHA/GQA at D=32/64/128, causal tile pruning, and masking for partial sequence tiles. Passed 60/60 CUDA cases against PyTorch SDPA with maximum absolute error 2.44 × 10<sup>−4</sup>. On RTX 5050 at causal B=1, H=16, N=511, D=64, measured 1.15×/1.13× versus eager/torch.compile SDPA using the default backend.</span> </a></p>
+</div>
+<section id="further-explorations" class="level2">
+<h2 class="anchored" data-anchor-id="further-explorations">Further Explorations</h2>
+<div class="project-stack">
 <p><!-- Add Transformer in NumPy GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Transformer in NumPy</span> <span class="project-row-meta">Tokenization, embeddings, attention, MLP blocks, layer norm, and training loop basics</span> </a></p>
 <p><!-- Add Transformer in PyTorch GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Transformer in PyTorch</span> <span class="project-row-meta">Clean encoder/decoder implementation with modular attention and training utilities</span> </a></p>
 <p><!-- Add Attention Variants GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Attention Variants</span> <span class="project-row-meta">MHA, MQA, GQA, sliding-window attention, rotary embeddings, and KV-cache-aware decoding</span> </a></p>
@@ -342,6 +346,7 @@ Transformer projects covering from-scratch implementations, PyTorch models, atte
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

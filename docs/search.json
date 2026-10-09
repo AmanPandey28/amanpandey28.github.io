@@ -2,9 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Machine Learning Systems Engineer",
+    "title": "LLM Inference & GPU Performance Engineer",
     "section": "",
-    "text": "I am a dual Master’s student at Purdue University (ECE & IE) with a deep interest in Machine Learning Systems, High-Performance Computing, and AI Infrastructure. I am passionate about the “full-stack” nature of modern AI—exploring the critical bridge where model architecture meets compiler design and hardware acceleration. My work is grounded in a strong architectural understanding of the deep learning landscape, from foundational CNNs and LSTMs to state-of-the-art Transformers, VLMs, and Diffusion models.\nI am particularly excited by the “systems journey” of these workloads. My projects revolve around analyzing how high-level abstractions in frameworks like PyTorch are captured as computational graphs, lowered through various Intermediate Representations (IRs), and ultimately compiled down to hardware-specific instruction sets (such as PTX, SASS, or machine code). I enjoy working on challenges related to inference and training optimization, including KV-cache management, quantization, operator fusion, and Mixture-of-Experts (MoE) execution. Through my work with CUDA C++ and Triton, I actively build custom kernels that leverage tiling strategies and memory hierarchies, while also exploring scalable paradigms for distributed and disaggregated inference across diverse hardware platforms.\nI am seeking opportunities in machine learning systems, infrastructure, and performance-oriented engineering roles, where I can contribute to building reliable, efficient, and scalable AI systems. This website highlights selected projects and technical writing that reflect how I approach system design, optimization, and problem-solving."
+    "text": "I build efficient inference systems, from CUDA C++ and Triton kernels to LLM scheduling, KV-cache management, and compiler performance analysis. I hold an M.S. in Electrical and Computer Engineering from Purdue University (May 2026), specializing in Artificial Intelligence and Machine Learning. I am seeking LLM Inference Engineer, Performance Engineer, and GPU Kernel Engineer roles.\nMy work connects operator-level optimization with serving latency, throughput, and memory efficiency. I implement, validate against reference outputs, and profile before drawing conclusions. My benchmarks use explicit workload shapes, warmup and steady-state timing, and appropriate PyTorch or cuBLAS baselines; I investigate regressions as carefully as speedups."
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "LLM Inference & GPU Performance Engineer",
+    "section": "Selected Work",
+    "text": "Selected Work\n\nGPU kernels for LLM inference: FP32 RMSNorm and GEMV/small-M GEMM in CUDA C++ and Triton, including residual fusion that reduced seven eager PyTorch launches to one. Passed 80/80 backend-shape checks.\nnano-vLLM inference runtime: Continuous batching, chunked prefill, paged KV storage, and prefix caching. Measured 3.84x output throughput versus single-sequence scheduling on 12 mixed-length Qwen3-0.6B requests.\nPyTorch compiler performance: FX capture, graph breaks, fusion, and correctness-checked LLM benchmarks. Reduced an eight-step Qwen2.5-0.5B FP32 decode from 97.9 to 66.8 ms with CUDA Graphs disabled.\nFlashAttention-2 in Triton: Forward attention with online softmax, FP16 MHA/GQA, and causal masking; validated 60/60 cases against PyTorch SDPA.\nMobileCLIP2 on Qualcomm QNN: PyTorch-to-ONNX-to-QNN deployment with 794/794 profiled operations on NPU and image/text P90 latencies of 14.51/3.99 ms on the S22 Family target."
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "LLM Inference & GPU Performance Engineer",
+    "section": "Background",
+    "text": "Background\nAt Purdue, I led IE 332 labs for 75 students covering machine learning, data pipelines, SQL, and backend development (August 2023 to December 2025). As a Data Science Researcher with Cisco and Purdue Data Mine (January to May 2024), I built forecast selection and ensembling methods for 10,000+ products, improving cost-weighted prediction accuracy by 3%.\nMy technical toolkit includes Python, C++, CUDA, Triton, CuTe DSL, CUTLASS, PyTorch, torch.compile, and ONNX. I use PyTorch Profiler, Nsight Systems, Nsight Compute, and Perfetto to connect runtime behavior to hardware bottlenecks, with additional interests in MLIR, XLA, TVM, quantization, and distributed inference."
   },
   {
     "objectID": "resources.html",
@@ -32,14 +46,35 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "Machine Learning Systems Engineer\n\nDownload ResumeOpen PDFView ProjectsGitHubLinkedIn"
+    "text": "LLM Inference & GPU Performance\n\n Download ResumeOpen PDFView ProjectsGitHubLinkedIn"
   },
   {
     "objectID": "resume.html#technical-focus",
     "href": "resume.html#technical-focus",
     "title": "Resume",
     "section": "Technical Focus",
-    "text": "Technical Focus\n\n Agentic CUDA Engineering B200 QR decomposition workflow with OpenCode, Codex, LiteLLM, worktree handoffs, validation gates, and measurable kernel speedups \n Cross-DSL GPU Kernels RMSNorm, decode GEMV/GEMM, and RoPE-KV kernels across CUDA C++, Triton, CuTe DSL, PyTorch references, and cuBLAS baselines \n Single-GPU LLM Runtime nano-vLLM++ with prefill/decode scheduling, KV-cache metadata, BF16/NF4/INT8 loading, and TTFT/TPOT serving metrics \n FlashAttention-2 in Triton Forward/backward attention kernels for 4K context with online softmax, recomputed backward, autotuning, and PyTorch SDPA comparison"
+    "text": "Technical Focus\n\n GPU Kernel Engineering FP32 RMSNorm and GEMV/small-M GEMM in CUDA C++ and Triton; fused seven eager launches into one and passed 80/80 backend-shape checks against PyTorch \n Single-GPU LLM Runtime Continuous batching, chunked prefill, paged KV tables, and prefix caching; 58 → 223 tokens/s versus single-sequence scheduling on 12 mixed-length Qwen3-0.6B requests \n Compiler Performance Analysis FX capture, torch.cond, isolated caches, and fresh-process profiling; Qwen2.5-0.5B FP32 eight-step decode 97.9 → 66.8 ms with CUDA Graphs disabled \n Triton Forward Attention FA2-style online softmax, FP16 MHA/GQA, causal tile pruning, and partial-tile masking; 60/60 CUDA forward cases validated against PyTorch SDPA \n Edge AI Deployment MobileCLIP2-S2 via PyTorch → ONNX → Qualcomm QNN; image/text P90 14.51/3.99 ms on S22 Family, with 794/794 profiled operations on NPU"
+  },
+  {
+    "objectID": "resume.html#technical-skills",
+    "href": "resume.html#technical-skills",
+    "title": "Resume",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nProgramming & GPU kernels: Python, C++, CUDA, Triton, CuTe DSL, CUTLASS.\nFrameworks & compilers: PyTorch, torch.compile, TorchDynamo, TorchInductor, FX, ONNX, MLIR, XLA, TVM.\nLLM inference & serving: vLLM, SGLang, TensorRT-LLM, continuous batching, KV and prefix caching, prefill/decode scheduling, TTFT, TPOT/ITL, throughput, goodput/SLO analysis, and tensor/pipeline/expert parallelism.\nProfiling & benchmarking: PyTorch Profiler, Nsight Systems, Nsight Compute, Perfetto, benchmark harnesses, warmup/steady-state timing, and correctness validation.\nQuantization & precision: PTQ, AWQ, SmoothQuant, scaling granularity, symmetric/asymmetric integer quantization, INT8/INT4, FP16/BF16, FP8, NVFP4, NF4.\nSystems & deployment: Linux, Docker, Kubernetes, Slurm, Git, Bash."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nPurdue University · West Lafayette, Indiana\nMaster of Science in Electrical and Computer Engineering · May 2026\nSpecialization: Artificial Intelligence & Machine Learning"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume",
+    "section": "Experience",
+    "text": "Experience\nTeaching Assistant, IE 332: Computing in Industrial Engineering\nPurdue University · August 2023 to December 2025\n\nLed labs for 75 students on machine learning algorithms, data pipelines, and supervised/unsupervised learning.\nTaught relational database design, ERDs, SQL, and backend web development with HTML/CSS/JS/PHP/MySQL.\nGuided student projects integrating ML with ERP, CRM, and SCM systems.\n\nData Science Researcher\nCisco × Purdue Data Mine · January to May 2024\n\nBuilt forecast selection and ensembling algorithms for 10,000+ Cisco products, improving cost-weighted prediction accuracy by 3%.\nClustered PLIDs with Gaussian Mixture Models to refine forecast segmentation.\nApplied Bayesian MCMC, MLE, and calibration methods to optimize ensemble weighting."
   },
   {
     "objectID": "projects/dl-framework.html",
@@ -53,21 +88,21 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Selected project areas across GPU performance, deep learning runtimes, compiler stacks, model architectures, and end-to-end ML systems work."
+    "text": "LLM inference runtimes, GPU kernels, compiler performance analysis, and edge deployment. Featured results include their workload and baseline so each measurement has context."
   },
   {
     "objectID": "projects/index.html#featured-systems-work",
     "href": "projects/index.html#featured-systems-work",
     "title": "Projects",
     "section": "Featured Systems Work",
-    "text": "Featured Systems Work\n\n Agentic CUDA Engineering GPU Mode B200 QR Decomposition  Multi-agent CUDA workflow for batched FP32 QR on B200, with permission gates, worktree handoffs, smoke tests, and reproducible Modal/Popcorn runs.  23.7% geomean reduction · Householder QR · B200 \n Cross-DSL Kernels LLM Inference Kernel Engineering  FP32 RMSNorm, decode GEMV/GEMM, and RoPE-KV kernels implemented across CUDA C++, Triton, and CuTe DSL with shared tests and CUDA-event benchmarks.  CUDA C++ · Triton · CuTe DSL · cuBLASLt \n Inference Runtime nano-vLLM++  Single-GPU LLM runtime with request state machines, prefill/decode separation, KV-cache metadata, quantized loading paths, and OpenAI-compatible endpoints.  KV cache · NF4/INT8 · TTFT/TPOT metrics \n Attention Kernels FlashAttention-2 in Triton  Fused Triton FA2 forward/backward implementation with online softmax, recomputed backward attention weights, causal masking, and autotuned kernels.  4K context · 16.2 TFLOP/s · Forward/backward"
+    "text": "Featured Systems Work\n\n GPU Kernel Engineering GPU Kernel Optimization for LLM Inference  FP32 RMSNorm and GEMV/small-M GEMM in CUDA C++ and Triton on RTX 5050. Residual-add/RMSNorm fusion reduced seven eager PyTorch launches to one at 256 × 4096; passed 80/80 backend-shape checks against PyTorch.  15.3–16.3× vs. earlier M=16 Triton projections · CUDA Graph medians \n Inference Runtime nano-vLLM: Single-GPU LLM Runtime  Token-budget continuous batching, chunked prefill, paged KV tables, and prefix caching with OpenAI-style serving. On 12 mixed-length Qwen3-0.6B requests, output throughput rose from 58 to 223 tokens/s versus single-sequence scheduling.  3.84× throughput · Prefix reuse: median TTFT 139 → 34 ms \n Compiler & Performance Analysis PyTorch Compiler & LLM Inference  FX capture, torch.cond, fusion analysis, and correctness-gated benchmarks with isolated caches and fresh-process profiling on RTX 5050. Investigated both pointwise speedups and a compiled MLP latency regression.  Qwen2.5-0.5B FP32: 8-step decode 97.9 → 66.8 ms · CUDA Graphs off \n Attention Kernels Triton FlashAttention-2: Forward Attention  FA2-style forward attention with online softmax, FP16 MHA/GQA, and causal tile pruning. Passed 60/60 CUDA cases against PyTorch SDPA with maximum absolute output error 2.44 × 10−4.  1.15× vs. eager SDPA · Causal B=1, H=16, N=511, D=64 · RTX 5050 \n Edge AI · LPCVC 2026 MobileCLIP2 on Qualcomm QNN  Static PyTorch → ONNX → QNN deployment of MobileCLIP2-S2, with FastViT reparameterization and preprocessing corrections. Validated all 56 image and 211 text device outputs at unchanged R@10 of 0.897470.  Image/text P90: 14.51/3.99 ms · S22 Family · 794/794 profiled ops on NPU"
   },
   {
     "objectID": "projects/index.html#project-areas",
     "href": "projects/index.html#project-areas",
     "title": "Projects",
     "section": "Project Areas",
-    "text": "Project Areas\n\n Performance GPU Kernels  CUDA C++, Triton, and CuTe DSL kernels for deep learning operators and memory-bound workloads.   CUDA C++ Triton CuTe DSL  \n Serving Runtime  Runtime systems work around vLLM, SGLang, TensorRT, and TensorRT-LLM.   vLLM SGLang TensorRT  \n Frameworks DL Framework  Building a small PyTorch-style framework in Python and C++ with tensors, autograd, modules, and kernels.   Python C++ Autograd  \n Compilation DL Compilers  Graph capture, IR lowering, fusion, scheduling, and compiler pipelines for tensor programs.   MLIR XLA torch.compile  \n Measurement Profiling  Nsight Systems, Nsight Compute, PyTorch Profiler, memory traces, and reproducible bottleneck analysis.   Nsight PyTorch Perfetto  \n Efficiency Inference Optimization  Quantization, KV cache reuse, prefix caching, batching, speculative decoding, and serving efficiency.   KV Cache Spec Decode Batching  \n Scale-Out Systems Distributed Inference & Parallelism  Collective communication and model-parallel execution for multi-GPU and multi-node inference.   Collectives TP / PP / EP Multi-node  \n Architectures Transformers  Transformer implementations in NumPy and PyTorch, including attention variants and efficient architectures.   Attention PyTorch NumPy  \n Generative Models Diffusion  Denoising models, schedulers, U-Nets, latent diffusion, and efficient sampling experiments.   DDPM U-Net Sampling  \n Learning Systems Reinforcement Learning  Policy gradients, actor-critic methods, value learning, and RL systems experiments.   PPO DQN Actor-Critic  \n Foundations DNN from Scratch  Core neural network building blocks from scratch, from ANN and CNN layers to training loops.   NumPy Backprop Training"
+    "text": "Project Areas\n\n Performance GPU Kernels  CUDA C++, Triton, and CuTe DSL kernels for deep learning operators and memory-bound workloads.   CUDA C++ Triton CuTe DSL  \n Serving Runtime  A single-GPU LLM runtime with continuous batching, chunked prefill, and paged KV caching; further exploration of serving engines.   vLLM SGLang TensorRT  \n Frameworks DL Framework  Building a small PyTorch-style framework in Python and C++ with tensors, autograd, modules, and kernels.   Python C++ Autograd  \n Compilation DL Compilers  Measured torch.compile behavior, FX graph capture, fusion, and graph breaks, alongside MLIR, XLA, and TVM explorations.   MLIR XLA torch.compile  \n Measurement Profiling  Nsight Systems, Nsight Compute, PyTorch Profiler, memory traces, and reproducible bottleneck analysis.   Nsight PyTorch Perfetto  \n Efficiency Inference Optimization  Measured batching, prefix-cache reuse, quantized loading, and compiler tradeoffs for latency, throughput, and memory efficiency.   KV Cache Spec Decode Batching  \n Scale-Out Systems Distributed Inference & Parallelism  Collective communication and model-parallel execution for multi-GPU and multi-node inference.   Collectives TP / PP / EP Multi-node  \n Architectures Transformers  Transformer implementations in NumPy and PyTorch, including attention variants and efficient architectures.   Attention PyTorch NumPy  \n Generative Models Diffusion  Denoising models, schedulers, U-Nets, latent diffusion, and efficient sampling experiments.   DDPM U-Net Sampling  \n Learning Systems Reinforcement Learning  Policy gradients, actor-critic methods, value learning, and RL systems experiments.   PPO DQN Actor-Critic  \n Foundations DNN from Scratch  Core neural network building blocks from scratch, from ANN and CNN layers to training loops.   NumPy Backprop Training  \n Deployment Edge AI & Deployment  MobileCLIP2 deployment on Qualcomm QNN, graph export, precision tradeoffs, and on-device accuracy and latency validation.   ONNX QNN NPU"
   },
   {
     "objectID": "projects/reinforcement-learning.html",
@@ -81,14 +116,70 @@
     "href": "projects/gpu-kernels.html",
     "title": "GPU Kernels",
     "section": "",
-    "text": "Operator-level performance work across CUDA C++, Triton, and CuTe DSL.\n\n\n GPU Mode B200 QR Decomposition Agentic CUDA workflow, batched FP32 Householder QR, Modal/Popcorn runs, and 23.7% local geomean reduction \n Cross-DSL LLM Kernels FP32 RMSNorm, decode GEMV/GEMM, RoPE-KV, CUDA C++, Triton, CuTe DSL, and cuBLAS baselines \n FlashAttention-2 Triton Fused forward/backward attention kernels with online softmax, recomputed backward, causal masking, and autotuning \n  LayerNorm Kernel Triton, CuTe DSL \n  Vector Addition Triton, CUDA C++ \n  GEMM CUDA C++, Triton, CuTe DSL"
+    "text": "Operator-level performance work across CUDA C++, Triton, and CuTe DSL."
+  },
+  {
+    "objectID": "projects/gpu-kernels.html#further-explorations",
+    "href": "projects/gpu-kernels.html#further-explorations",
+    "title": "GPU Kernels",
+    "section": "Further Explorations",
+    "text": "Further Explorations\n\n  LayerNorm Kernel Triton, CuTe DSL \n  Vector Addition Triton, CUDA C++ \n  GEMM CUDA C++, Triton, CuTe DSL"
   },
   {
     "objectID": "projects/runtime.html",
     "href": "projects/runtime.html",
     "title": "Runtime",
     "section": "",
-    "text": "Inference runtime systems and serving engines for efficient model deployment.\n\n\n nano-vLLM++ Single-GPU runtime with request state machines, prefill/decode separation, KV-cache metadata, quantized loading, and OpenAI-compatible endpoints \n  vLLM Paged attention and high-throughput LLM serving \n  SGLang Structured generation and serving workflows \n  TensorRT Optimized inference engines \n  TensorRT-LLM LLM-specific serving and engine optimization"
+    "text": "Inference runtime systems and serving engines for efficient model deployment."
+  },
+  {
+    "objectID": "projects/runtime.html#further-explorations",
+    "href": "projects/runtime.html#further-explorations",
+    "title": "Runtime",
+    "section": "Further Explorations",
+    "text": "Further Explorations\n\n  vLLM Paged attention and high-throughput LLM serving \n  SGLang Structured generation and serving workflows \n  TensorRT Optimized inference engines \n  TensorRT-LLM LLM-specific serving and engine optimization"
+  },
+  {
+    "objectID": "projects/edge-ai.html",
+    "href": "projects/edge-ai.html",
+    "title": "Edge AI & Deployment",
+    "section": "",
+    "text": "Model export, graph rewrites, precision tradeoffs, and on-device validation for inference beyond the GPU."
+  },
+  {
+    "objectID": "projects/edge-ai.html#export-graph-optimization",
+    "href": "projects/edge-ai.html#export-graph-optimization",
+    "title": "Edge AI & Deployment",
+    "section": "Export & Graph Optimization",
+    "text": "Export & Graph Optimization\nBuilt a static PyTorch → ONNX opset-16 → QNN pipeline with FastViT reparameterization and normalization, SDPA, and EOS rewrites. Correcting preprocessing raised fractional R@10 from 0.043 to 0.897."
+  },
+  {
+    "objectID": "projects/edge-ai.html#accuracy-device-validation",
+    "href": "projects/edge-ai.html#accuracy-device-validation",
+    "title": "Edge AI & Deployment",
+    "section": "Accuracy & Device Validation",
+    "text": "Accuracy & Device Validation\nValidated all 56 image and 211 text device outputs at unchanged R@10 of 0.897470, with image/text cosine similarity of 0.999863/0.999998.\nRejected calibrated W8A16 QDQ after image cosine similarity dropped to 0.811, and isolated an S22/v69 DLC-composition failure. These checks informed the deployment choice alongside latency measurements."
+  },
+  {
+    "objectID": "projects/transformers.html",
+    "href": "projects/transformers.html",
+    "title": "Transformers",
+    "section": "",
+    "text": "Transformer projects covering from-scratch implementations, PyTorch models, attention mechanics, architecture variants, and efficiency-focused experiments."
+  },
+  {
+    "objectID": "projects/transformers.html#further-explorations",
+    "href": "projects/transformers.html#further-explorations",
+    "title": "Transformers",
+    "section": "Further Explorations",
+    "text": "Further Explorations\n\n  Transformer in NumPy Tokenization, embeddings, attention, MLP blocks, layer norm, and training loop basics \n  Transformer in PyTorch Clean encoder/decoder implementation with modular attention and training utilities \n  Attention Variants MHA, MQA, GQA, sliding-window attention, rotary embeddings, and KV-cache-aware decoding \n  Efficient Architectures Long-context, sparse, linear-attention, and memory-efficient transformer experiments"
+  },
+  {
+    "objectID": "puzzles.html",
+    "href": "puzzles.html",
+    "title": "Puzzles",
+    "section": "",
+    "text": "Practice tracks for sharpening GPU programming, ML systems intuition, algorithmic problem solving, and quantitative reasoning.\n\n\n GPU Programming LeetGPU  Browser-based GPU programming challenges for building comfort with kernels, memory movement, and parallel execution.   GPU Kernels Practice  \n Tensor Systems Tensara  Tensor and systems-oriented exercises for practicing the reasoning patterns behind modern AI workloads.   Tensors Systems AI  \n ML Systems and Deep Learning Practice TesnorTonic  Personal TensorTonic profile for tracking tensor puzzle progress, practice, and systems-oriented problem solving.   Kernels PyTorch Deep Learning  \n Mojo / GPU Mojo GPU Puzzles  Hands-on GPU puzzles in Mojo for learning kernel structure, memory hierarchy, and accelerator programming.   Mojo GPU Kernels  \n GPU Architecture GPU Demystified  A practical path for building intuition about GPU architecture, programming models, and performance behavior.   Architecture Performance CUDA  \n CUDA Intuition Sasha Rush GPU Puzzles  Interactive GPU puzzles by Sasha Rush for learning CUDA-style programming through small, focused exercises.   Numba CUDA Colab  \n Algorithms LeetCode  Core algorithm and data-structure practice for interviews, implementation fluency, and problem decomposition.   DSA Interviews Practice  \n Math + Code Project Euler  Mathematical programming problems that reward clean reasoning, efficient algorithms, and numerical insight.   Math Algorithms Reasoning  \n Quant Reasoning Jane Street Puzzles  High-quality probability, logic, and optimization puzzles for practicing precise quantitative thinking.   Logic Probability Optimization  \n Problem Solving Brain Stellar  A puzzle archive for building broad reasoning strength across math, logic, and programming-style challenges.   Puzzles Logic Math"
   },
   {
     "objectID": "projects/cuda-kernel.html",
@@ -103,20 +194,6 @@
     "title": "Optimizing CUDA Kernels",
     "section": "",
     "text": "Here is how I wrote the kernel…\n```cpp global void matMul(float* A, float* B, float* C) { // My code here }"
-  },
-  {
-    "objectID": "puzzles.html",
-    "href": "puzzles.html",
-    "title": "Puzzles",
-    "section": "",
-    "text": "Practice tracks for sharpening GPU programming, ML systems intuition, algorithmic problem solving, and quantitative reasoning.\n\n\n GPU Programming LeetGPU  Browser-based GPU programming challenges for building comfort with kernels, memory movement, and parallel execution.   GPU Kernels Practice  \n Tensor Systems Tensara  Tensor and systems-oriented exercises for practicing the reasoning patterns behind modern AI workloads.   Tensors Systems AI  \n ML Systems and Deep Learning Practice TesnorTonic  Personal TensorTonic profile for tracking tensor puzzle progress, practice, and systems-oriented problem solving.   Kernels PyTorch Deep Learning  \n Mojo / GPU Mojo GPU Puzzles  Hands-on GPU puzzles in Mojo for learning kernel structure, memory hierarchy, and accelerator programming.   Mojo GPU Kernels  \n GPU Architecture GPU Demystified  A practical path for building intuition about GPU architecture, programming models, and performance behavior.   Architecture Performance CUDA  \n CUDA Intuition Sasha Rush GPU Puzzles  Interactive GPU puzzles by Sasha Rush for learning CUDA-style programming through small, focused exercises.   Numba CUDA Colab  \n Algorithms LeetCode  Core algorithm and data-structure practice for interviews, implementation fluency, and problem decomposition.   DSA Interviews Practice  \n Math + Code Project Euler  Mathematical programming problems that reward clean reasoning, efficient algorithms, and numerical insight.   Math Algorithms Reasoning  \n Quant Reasoning Jane Street Puzzles  High-quality probability, logic, and optimization puzzles for practicing precise quantitative thinking.   Logic Probability Optimization  \n Problem Solving Brain Stellar  A puzzle archive for building broad reasoning strength across math, logic, and programming-style challenges.   Puzzles Logic Math"
-  },
-  {
-    "objectID": "projects/transformers.html",
-    "href": "projects/transformers.html",
-    "title": "Transformers",
-    "section": "",
-    "text": "Transformer projects covering from-scratch implementations, PyTorch models, attention mechanics, architecture variants, and efficiency-focused experiments.\n\n\n FlashAttention-2 in Triton Memory-efficient attention with tiled QK/V SRAM movement, online softmax, causal masking, and recomputed backward \n  Transformer in NumPy Tokenization, embeddings, attention, MLP blocks, layer norm, and training loop basics \n  Transformer in PyTorch Clean encoder/decoder implementation with modular attention and training utilities \n  Attention Variants MHA, MQA, GQA, sliding-window attention, rotary embeddings, and KV-cache-aware decoding \n  Efficient Architectures Long-context, sparse, linear-attention, and memory-efficient transformer experiments"
   },
   {
     "objectID": "projects/dnn-from-scratch.html",
@@ -137,21 +214,42 @@
     "href": "projects/profiling.html",
     "title": "Profiling",
     "section": "",
-    "text": "Profiling workflows for finding bottlenecks across Python, PyTorch operators, CUDA kernels, memory allocation, and full CPU/GPU timelines.\n\n\n  Nsight Systems System-wide CPU/GPU timelines, CUDA API traces, NVTX ranges, and utilization gaps \n  Nsight Compute Kernel-level metrics, occupancy, memory throughput, warp stalls, and source correlation \n  PyTorch Profiler Operator costs, CPU/CUDA activity, stack traces, tensor shapes, memory, and traces \n  CUDA Memory Profiling Allocator snapshots, fragmentation, peak memory, and non-PyTorch allocation debugging"
+    "text": "Profiling workflows for finding bottlenecks across Python, PyTorch operators, CUDA kernels, memory allocation, and full CPU/GPU timelines."
+  },
+  {
+    "objectID": "projects/profiling.html#further-explorations",
+    "href": "projects/profiling.html#further-explorations",
+    "title": "Profiling",
+    "section": "Further Explorations",
+    "text": "Further Explorations\n\n  Nsight Systems System-wide CPU/GPU timelines, CUDA API traces, NVTX ranges, and utilization gaps \n  Nsight Compute Kernel-level metrics, occupancy, memory throughput, warp stalls, and source correlation \n  PyTorch Profiler Operator costs, CPU/CUDA activity, stack traces, tensor shapes, memory, and traces \n  CUDA Memory Profiling Allocator snapshots, fragmentation, peak memory, and non-PyTorch allocation debugging"
   },
   {
     "objectID": "projects/dl-compilers.html",
     "href": "projects/dl-compilers.html",
     "title": "DL Compilers",
     "section": "",
-    "text": "Compiler-oriented projects around graph capture, IR lowering, fusion, scheduling, generated kernels, and deployment-oriented compilation.\n\n\n  MLIR IR design, dialects, lowering passes, and code generation pipelines \n  XLA Graph compilation, HLO-style transformations, and accelerator execution \n  TVM Tensor program optimization, scheduling, autotuning, and lowering \n  torch.compile TorchDynamo graph capture, Inductor codegen, graph breaks, and guard behavior"
+    "text": "Compiler-oriented projects around graph capture, IR lowering, fusion, scheduling, generated kernels, and deployment-oriented compilation."
+  },
+  {
+    "objectID": "projects/dl-compilers.html#further-explorations",
+    "href": "projects/dl-compilers.html#further-explorations",
+    "title": "DL Compilers",
+    "section": "Further Explorations",
+    "text": "Further Explorations\n\n  MLIR IR design, dialects, lowering passes, and code generation pipelines \n  XLA Graph compilation, HLO-style transformations, and accelerator execution \n  TVM Tensor program optimization, scheduling, autotuning, and lowering"
   },
   {
     "objectID": "projects/inference-optimization.html",
     "href": "projects/inference-optimization.html",
     "title": "Inference Optimization",
     "section": "",
-    "text": "Techniques for improving serving latency, throughput, memory efficiency, time-to-first-token, and sustained decode performance.\n\n\n nano-vLLM++ Serving Metrics TTFT, TPOT, end-to-end latency, queue depth, KV-block telemetry, and BF16/NF4/INT8 loading paths \n  Quantization FP8, INT8, INT4, AWQ/GPTQ-style compression, and accuracy-performance tradeoffs \n  KV Cache Optimization Paged KV blocks, reuse across requests, offloading, eviction, MQA, and GQA \n  Prefix Caching Automatic prefix reuse for shared prompts and retrieval-heavy workloads \n  Continuous Batching Dynamic scheduling for mixed prefill/decode workloads and higher GPU utilization \n  Speculative Decoding Draft-and-verify decoding, EAGLE-style methods, and acceptance-rate tuning \n  Disaggregated Serving Separating prefill and decode paths for scalable, latency-aware inference"
+    "text": "Techniques for improving serving latency, throughput, memory efficiency, time-to-first-token, and sustained decode performance."
+  },
+  {
+    "objectID": "projects/inference-optimization.html#further-explorations",
+    "href": "projects/inference-optimization.html#further-explorations",
+    "title": "Inference Optimization",
+    "section": "Further Explorations",
+    "text": "Further Explorations\n\n  Speculative Decoding Draft-and-verify decoding, EAGLE-style methods, and acceptance-rate tuning \n  Disaggregated Serving Separating prefill and decode paths for scalable, latency-aware inference"
   },
   {
     "objectID": "projects/diffusion.html",

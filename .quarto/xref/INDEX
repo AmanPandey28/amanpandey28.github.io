@@ -55,5 +55,8 @@
   },
   "resume.qmd": {
     "resume.html": "6598845a"
+  },
+  "projects/edge-ai.qmd": {
+    "edge-ai.html": "a76eac23"
   }
 }

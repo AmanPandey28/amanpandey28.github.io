@@ -334,13 +334,19 @@ ul.task-list li input[type="checkbox"] {
 Compiler-oriented projects around graph capture, IR lowering, fusion, scheduling, generated kernels, and deployment-oriented compilation.
 </p>
 <div class="project-stack">
+<p><a class="project-row-card" href="https://github.com/AmanPandey28/torch-compile-internals" target="_blank" rel="noopener"> <span class="project-row-title">PyTorch Compiler &amp; LLM Inference Performance Analysis</span> <span class="project-row-meta">Correctness-gated torch.compile suite on RTX 5050 with FX capture, isolated caches, and fresh-process profiling. Replaced tensor-dependent control flow with torch.cond to reduce three FX regions to one full graph. Measured 2.07–2.12× FP32 pointwise speedup and 13.1–16.2% higher latency in a compiled 4.7M-parameter MLP.</span> </a></p>
+<p><a class="project-row-card" href="https://github.com/AmanPandey28/lpcv2026" target="_blank" rel="noopener"> <span class="project-row-title">PyTorch → ONNX → QNN</span> <span class="project-row-meta">Static ONNX opset-16 export for MobileCLIP2-S2, FastViT reparameterization, and normalization/SDPA/EOS rewrites for Qualcomm QNN deployment. Validated 56 image and 211 text device outputs with unchanged R@10 of 0.897470.</span> </a></p>
+</div>
+<section id="further-explorations" class="level2">
+<h2 class="anchored" data-anchor-id="further-explorations">Further Explorations</h2>
+<div class="project-stack">
 <p><!-- Add MLIR GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">MLIR</span> <span class="project-row-meta">IR design, dialects, lowering passes, and code generation pipelines</span> </a></p>
 <p><!-- Add XLA GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">XLA</span> <span class="project-row-meta">Graph compilation, HLO-style transformations, and accelerator execution</span> </a></p>
 <p><!-- Add TVM GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">TVM</span> <span class="project-row-meta">Tensor program optimization, scheduling, autotuning, and lowering</span> </a></p>
-<p><!-- Add torch.compile GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">torch.compile</span> <span class="project-row-meta">TorchDynamo graph capture, Inductor codegen, graph breaks, and guard behavior</span> </a></p>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -9,21 +9,25 @@ Operator-level performance work across CUDA C++, Triton, and CuTe DSL.
 </p>
 
 <div class="project-stack">
+  <a class="project-row-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener">
+    <span class="project-row-title">GPU Kernel Optimization for LLM Inference</span>
+    <span class="project-row-meta">FP32 RMSNorm and GEMV/small-M GEMM in CUDA C++ and Triton on RTX 5050. Fused residual add, RMS reduction, and scaling from seven eager PyTorch launches to one at 256 × 4096; passed 80/80 backend-shape checks. Row tiling and split-K accelerated two M=16 Triton projections 15.3–16.3× versus earlier implementations using CUDA Graph medians.</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener">
+    <span class="project-row-title">Triton FlashAttention-2: Forward Attention</span>
+    <span class="project-row-meta">Online softmax without the N × N score matrix, FP16 MHA/GQA at head dimensions 32/64/128, and causal/partial-tile masking. Validated 60/60 cases against PyTorch SDPA; measured 255 registers/thread and 8.3% occupancy at D=128 with Nsight profiling.</span>
+  </a>
+
   <a class="project-row-card" href="https://github.com/AmanPandey28/GPU-Mode/tree/main" target="_blank" rel="noopener">
     <span class="project-row-title">GPU Mode B200 QR Decomposition</span>
     <span class="project-row-meta">Agentic CUDA workflow, batched FP32 Householder QR, Modal/Popcorn runs, and 23.7% local geomean reduction</span>
   </a>
+</div>
 
-  <a class="project-row-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener">
-    <span class="project-row-title">Cross-DSL LLM Kernels</span>
-    <span class="project-row-meta">FP32 RMSNorm, decode GEMV/GEMM, RoPE-KV, CUDA C++, Triton, CuTe DSL, and cuBLAS baselines</span>
-  </a>
+## Further Explorations
 
-  <a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener">
-    <span class="project-row-title">FlashAttention-2 Triton</span>
-    <span class="project-row-meta">Fused forward/backward attention kernels with online softmax, recomputed backward, causal masking, and autotuning</span>
-  </a>
-
+<div class="project-stack">
   <!-- Add LayerNorm Kernel GitHub repo URL here -->
   <a class="project-row-card" href="#" target="_blank" rel="noopener">
     <span class="project-row-title">LayerNorm Kernel</span>

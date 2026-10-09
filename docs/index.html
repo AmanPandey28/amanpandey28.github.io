@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Aman Pandey Sanjeev Kumar builds LLM inference runtimes, CUDA and Triton kernels, and reproducible compiler and performance benchmarks.">
 
-<title>Machine Learning Systems Engineer – Aman Pandey Sanjeev Kumar</title>
+<title>LLM Inference &amp; GPU Performance Engineer – Aman Pandey Sanjeev Kumar</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -312,17 +313,36 @@ ul.task-list li input[type="checkbox"] {
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Machine Learning Systems Engineer</h1>
+<h1 class="title">LLM Inference &amp; GPU Performance Engineer</h1>
+</div>
+<div>
+  <div class="description">
+    Aman Pandey Sanjeev Kumar builds LLM inference runtimes, CUDA and Triton kernels, and reproducible compiler and performance benchmarks.
+  </div>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
 
-<p>I am a dual Master’s student at Purdue University (ECE &amp; IE) with a deep interest in Machine Learning Systems, High-Performance Computing, and AI Infrastructure. I am passionate about the “full-stack” nature of modern AI—exploring the critical bridge where model architecture meets compiler design and hardware acceleration. My work is grounded in a strong architectural understanding of the deep learning landscape, from foundational CNNs and LSTMs to state-of-the-art Transformers, VLMs, and Diffusion models.</p>
-<p>I am particularly excited by the “systems journey” of these workloads. My projects revolve around analyzing how high-level abstractions in frameworks like PyTorch are captured as computational graphs, lowered through various Intermediate Representations (IRs), and ultimately compiled down to hardware-specific instruction sets (such as PTX, SASS, or machine code). I enjoy working on challenges related to inference and training optimization, including KV-cache management, quantization, operator fusion, and Mixture-of-Experts (MoE) execution. Through my work with CUDA C++ and Triton, I actively build custom kernels that leverage tiling strategies and memory hierarchies, while also exploring scalable paradigms for distributed and disaggregated inference across diverse hardware platforms.</p>
-<p>I am seeking opportunities in machine learning systems, infrastructure, and performance-oriented engineering roles, where I can contribute to building reliable, efficient, and scalable AI systems. This website highlights selected projects and technical writing that reflect how I approach system design, optimization, and problem-solving.</p>
+<p>I build efficient inference systems, from CUDA C++ and Triton kernels to LLM scheduling, KV-cache management, and compiler performance analysis. I hold an M.S. in Electrical and Computer Engineering from Purdue University (May 2026), specializing in Artificial Intelligence and Machine Learning. I am seeking <strong>LLM Inference Engineer, Performance Engineer, and GPU Kernel Engineer</strong> roles.</p>
+<p>My work connects operator-level optimization with serving latency, throughput, and memory efficiency. I implement, validate against reference outputs, and profile before drawing conclusions. My benchmarks use explicit workload shapes, warmup and steady-state timing, and appropriate PyTorch or cuBLAS baselines; I investigate regressions as carefully as speedups.</p>
+<section id="selected-work" class="level2">
+<h2 data-anchor-id="selected-work">Selected Work</h2>
+<ul>
+<li><strong><a href="./projects/gpu-kernels.html">GPU kernels for LLM inference</a>:</strong> FP32 RMSNorm and GEMV/small-M GEMM in CUDA C++ and Triton, including residual fusion that reduced seven eager PyTorch launches to one. Passed 80/80 backend-shape checks.</li>
+<li><strong><a href="./projects/runtime.html">nano-vLLM inference runtime</a>:</strong> Continuous batching, chunked prefill, paged KV storage, and prefix caching. Measured 3.84x output throughput versus single-sequence scheduling on 12 mixed-length Qwen3-0.6B requests.</li>
+<li><strong><a href="./projects/dl-compilers.html">PyTorch compiler performance</a>:</strong> FX capture, graph breaks, fusion, and correctness-checked LLM benchmarks. Reduced an eight-step Qwen2.5-0.5B FP32 decode from 97.9 to 66.8 ms with CUDA Graphs disabled.</li>
+<li><strong><a href="./projects/transformers.html">FlashAttention-2 in Triton</a>:</strong> Forward attention with online softmax, FP16 MHA/GQA, and causal masking; validated 60/60 cases against PyTorch SDPA.</li>
+<li><strong><a href="./projects/edge-ai.html">MobileCLIP2 on Qualcomm QNN</a>:</strong> PyTorch-to-ONNX-to-QNN deployment with 794/794 profiled operations on NPU and image/text P90 latencies of 14.51/3.99 ms on the S22 Family target.</li>
+</ul>
+</section>
+<section id="background" class="level2">
+<h2 data-anchor-id="background">Background</h2>
+<p>At Purdue, I led IE 332 labs for 75 students covering machine learning, data pipelines, SQL, and backend development (August 2023 to December 2025). As a Data Science Researcher with Cisco and Purdue Data Mine (January to May 2024), I built forecast selection and ensembling methods for 10,000+ products, improving cost-weighted prediction accuracy by 3%.</p>
+<p>My technical toolkit includes Python, C++, CUDA, Triton, CuTe DSL, CUTLASS, PyTorch, torch.compile, and ONNX. I use PyTorch Profiler, Nsight Systems, Nsight Compute, and Perfetto to connect runtime behavior to hardware bottlenecks, with additional interests in MLIR, XLA, TVM, quantization, and distributed inference.</p>
 
 
+</section>
 </main> 
   <hr class="about-sep">
    <div class="about-links">
@@ -332,7 +352,15 @@ ul.task-list li input[type="checkbox"] {
   </a>
   <a href="https://github.com/AmanPandey28" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
+     <span class="about-link-text">GitHub</span>
+  </a>
+  <a href="/resume.html" class="about-link" rel="" target="">
+    <i class="bi bi-file-earmark-person"></i>
+     <span class="about-link-text">Resume</span>
+  </a>
+  <a href="mailto:amanpandey.sanjeevk@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
   </a>
 </div>
 </div>

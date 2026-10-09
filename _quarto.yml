@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs  # This makes publishing to GitHub Pages easier later
+  resources:
+    - Resume.pdf
 
 website:
   title: "Aman Pandey Sanjeev Kumar"

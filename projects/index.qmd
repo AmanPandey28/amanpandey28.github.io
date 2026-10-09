@@ -2,54 +2,70 @@
 title: "Projects"
 comments: false
 toc: false
+description: "Selected LLM inference, GPU kernel, PyTorch compiler, attention, and edge deployment projects with measured performance and correctness results."
 ---
 
 <p class="project-page-intro">
-Selected project areas across GPU performance, deep learning runtimes,
-compiler stacks, model architectures, and end-to-end ML systems work.
+LLM inference runtimes, GPU kernels, compiler performance analysis, and edge deployment.
+Featured results include their workload and baseline so each measurement has context.
 </p>
 
 ## Featured Systems Work
 
 <div class="featured-project-grid">
-  <a class="featured-project-card" href="https://github.com/AmanPandey28/GPU-Mode/tree/main" target="_blank" rel="noopener">
-    <span class="featured-project-kicker">Agentic CUDA Engineering</span>
-    <span class="featured-project-title">GPU Mode B200 QR Decomposition</span>
-    <span class="featured-project-description">
-      Multi-agent CUDA workflow for batched FP32 QR on B200, with permission gates,
-      worktree handoffs, smoke tests, and reproducible Modal/Popcorn runs.
-    </span>
-    <span class="featured-project-footer">23.7% geomean reduction · Householder QR · B200</span>
-  </a>
-
   <a class="featured-project-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener">
-    <span class="featured-project-kicker">Cross-DSL Kernels</span>
-    <span class="featured-project-title">LLM Inference Kernel Engineering</span>
+    <span class="featured-project-kicker">GPU Kernel Engineering</span>
+    <span class="featured-project-title">GPU Kernel Optimization for LLM Inference</span>
     <span class="featured-project-description">
-      FP32 RMSNorm, decode GEMV/GEMM, and RoPE-KV kernels implemented across
-      CUDA C++, Triton, and CuTe DSL with shared tests and CUDA-event benchmarks.
+      FP32 RMSNorm and GEMV/small-M GEMM in CUDA C++ and Triton on RTX 5050.
+      Residual-add/RMSNorm fusion reduced seven eager PyTorch launches to one at
+      256 × 4096; passed 80/80 backend-shape checks against PyTorch.
     </span>
-    <span class="featured-project-footer">CUDA C++ · Triton · CuTe DSL · cuBLASLt</span>
+    <span class="featured-project-footer">15.3–16.3× vs. earlier M=16 Triton projections · CUDA Graph medians</span>
   </a>
 
   <a class="featured-project-card" href="https://github.com/AmanPandey28/nano_vllm_pp" target="_blank" rel="noopener">
     <span class="featured-project-kicker">Inference Runtime</span>
-    <span class="featured-project-title">nano-vLLM++</span>
+    <span class="featured-project-title">nano-vLLM: Single-GPU LLM Runtime</span>
     <span class="featured-project-description">
-      Single-GPU LLM runtime with request state machines, prefill/decode separation,
-      KV-cache metadata, quantized loading paths, and OpenAI-compatible endpoints.
+      Token-budget continuous batching, chunked prefill, paged KV tables, and
+      prefix caching with OpenAI-style serving. On 12 mixed-length Qwen3-0.6B
+      requests, output throughput rose from 58 to 223 tokens/s versus single-sequence scheduling.
     </span>
-    <span class="featured-project-footer">KV cache · NF4/INT8 · TTFT/TPOT metrics</span>
+    <span class="featured-project-footer">3.84× throughput · Prefix reuse: median TTFT 139 → 34 ms</span>
+  </a>
+
+  <a class="featured-project-card" href="https://github.com/AmanPandey28/torch-compile-internals" target="_blank" rel="noopener">
+    <span class="featured-project-kicker">Compiler &amp; Performance Analysis</span>
+    <span class="featured-project-title">PyTorch Compiler &amp; LLM Inference</span>
+    <span class="featured-project-description">
+      FX capture, torch.cond, fusion analysis, and correctness-gated benchmarks
+      with isolated caches and fresh-process profiling on RTX 5050. Investigated
+      both pointwise speedups and a compiled MLP latency regression.
+    </span>
+    <span class="featured-project-footer">Qwen2.5-0.5B FP32: 8-step decode 97.9 → 66.8 ms · CUDA Graphs off</span>
   </a>
 
   <a class="featured-project-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener">
     <span class="featured-project-kicker">Attention Kernels</span>
-    <span class="featured-project-title">FlashAttention-2 in Triton</span>
+    <span class="featured-project-title">Triton FlashAttention-2: Forward Attention</span>
     <span class="featured-project-description">
-      Fused Triton FA2 forward/backward implementation with online softmax,
-      recomputed backward attention weights, causal masking, and autotuned kernels.
+      FA2-style forward attention with online softmax, FP16 MHA/GQA, and causal
+      tile pruning. Passed 60/60 CUDA cases against PyTorch SDPA with maximum
+      absolute output error 2.44 × 10<sup>−4</sup>.
     </span>
-    <span class="featured-project-footer">4K context · 16.2 TFLOP/s · Forward/backward</span>
+    <span class="featured-project-footer">1.15× vs. eager SDPA · Causal B=1, H=16, N=511, D=64 · RTX 5050</span>
+  </a>
+
+  <a class="featured-project-card" href="https://github.com/AmanPandey28/lpcv2026" target="_blank" rel="noopener">
+    <span class="featured-project-kicker">Edge AI · LPCVC 2026</span>
+    <span class="featured-project-title">MobileCLIP2 on Qualcomm QNN</span>
+    <span class="featured-project-description">
+      Static PyTorch → ONNX → QNN deployment of MobileCLIP2-S2, with FastViT
+      reparameterization and preprocessing corrections. Validated all 56 image
+      and 211 text device outputs at unchanged R@10 of 0.897470.
+    </span>
+    <span class="featured-project-footer">Image/text P90: 14.51/3.99 ms · S22 Family · 794/794 profiled ops on NPU</span>
   </a>
 </div>
 
@@ -73,7 +89,7 @@ compiler stacks, model architectures, and end-to-end ML systems work.
     <span class="project-card-kicker">Serving</span>
     <span class="project-card-title">Runtime</span>
     <span class="project-card-description">
-      Runtime systems work around vLLM, SGLang, TensorRT, and TensorRT-LLM.
+      A single-GPU LLM runtime with continuous batching, chunked prefill, and paged KV caching; further exploration of serving engines.
     </span>
     <span class="project-card-tags">
       <span>vLLM</span>
@@ -99,7 +115,7 @@ compiler stacks, model architectures, and end-to-end ML systems work.
     <span class="project-card-kicker">Compilation</span>
     <span class="project-card-title">DL Compilers</span>
     <span class="project-card-description">
-      Graph capture, IR lowering, fusion, scheduling, and compiler pipelines for tensor programs.
+      Measured torch.compile behavior, FX graph capture, fusion, and graph breaks, alongside MLIR, XLA, and TVM explorations.
     </span>
     <span class="project-card-tags">
       <span>MLIR</span>
@@ -125,7 +141,7 @@ compiler stacks, model architectures, and end-to-end ML systems work.
     <span class="project-card-kicker">Efficiency</span>
     <span class="project-card-title">Inference Optimization</span>
     <span class="project-card-description">
-      Quantization, KV cache reuse, prefix caching, batching, speculative decoding, and serving efficiency.
+      Measured batching, prefix-cache reuse, quantized loading, and compiler tradeoffs for latency, throughput, and memory efficiency.
     </span>
     <span class="project-card-tags">
       <span>KV Cache</span>
@@ -196,6 +212,19 @@ compiler stacks, model architectures, and end-to-end ML systems work.
       <span>NumPy</span>
       <span>Backprop</span>
       <span>Training</span>
+    </span>
+  </a>
+
+  <a class="project-category-card" href="edge-ai.html">
+    <span class="project-card-kicker">Deployment</span>
+    <span class="project-card-title">Edge AI &amp; Deployment</span>
+    <span class="project-card-description">
+      MobileCLIP2 deployment on Qualcomm QNN, graph export, precision tradeoffs, and on-device accuracy and latency validation.
+    </span>
+    <span class="project-card-tags">
+      <span>ONNX</span>
+      <span>QNN</span>
+      <span>NPU</span>
     </span>
   </a>
 </div>

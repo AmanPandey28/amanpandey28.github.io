@@ -334,7 +334,11 @@ ul.task-list li input[type="checkbox"] {
 Inference runtime systems and serving engines for efficient model deployment.
 </p>
 <div class="project-stack">
-<p><a class="project-row-card" href="https://github.com/AmanPandey28/nano_vllm_pp" target="_blank" rel="noopener"> <span class="project-row-title">nano-vLLM++</span> <span class="project-row-meta">Single-GPU runtime with request state machines, prefill/decode separation, KV-cache metadata, quantized loading, and OpenAI-compatible endpoints</span> </a></p>
+<p><a class="project-row-card" href="https://github.com/AmanPandey28/nano_vllm_pp" target="_blank" rel="noopener"> <span class="project-row-title">nano-vLLM: Single-GPU LLM Inference Runtime</span> <span class="project-row-meta">Token-budget continuous batching, chunked prefill, and OpenAI-style serving with TTFT/TPOT/KV telemetry. Paged KV tables, refcounts, and parent-hash prefix caching were audited over 1,500 seeded operations. On 12 mixed-length Qwen3-0.6B requests, output throughput rose from 58 to 223 tokens/s versus single-sequence scheduling; all 12 greedy outputs matched in the prefix-reuse experiment.</span> </a></p>
+</div>
+<section id="further-explorations" class="level2">
+<h2 class="anchored" data-anchor-id="further-explorations">Further Explorations</h2>
+<div class="project-stack">
 <p><!-- Add vLLM GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">vLLM</span> <span class="project-row-meta">Paged attention and high-throughput LLM serving</span> </a></p>
 <p><!-- Add SGLang GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">SGLang</span> <span class="project-row-meta">Structured generation and serving workflows</span> </a></p>
 <p><!-- Add TensorRT GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">TensorRT</span> <span class="project-row-meta">Optimized inference engines</span> </a></p>
@@ -342,6 +346,7 @@ Inference runtime systems and serving engines for efficient model deployment.
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

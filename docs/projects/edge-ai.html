@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="MobileCLIP2 optimization and validation on Qualcomm QNN for LPCVC 2026.">
 
-<title>Profiling – Aman Pandey Sanjeev Kumar</title>
+<title>Edge AI &amp; Deployment – Aman Pandey Sanjeev Kumar</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -313,9 +314,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Profiling</h1>
+<h1 class="title">Edge AI &amp; Deployment</h1>
 </div>
 
+<div>
+  <div class="description">
+    MobileCLIP2 optimization and validation on Qualcomm QNN for LPCVC 2026.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -331,21 +337,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p class="project-page-intro">
-Profiling workflows for finding bottlenecks across Python, PyTorch operators, CUDA kernels, memory allocation, and full CPU/GPU timelines.
+Model export, graph rewrites, precision tradeoffs, and on-device validation for inference beyond the GPU.
 </p>
 <div class="project-stack">
-<p><a class="project-row-card" href="https://github.com/AmanPandey28/torch-compile-internals" target="_blank" rel="noopener"> <span class="project-row-title">LLM Compiler Profiling</span> <span class="project-row-meta">Qwen2.5-0.5B FP32 on RTX 5050 with CUDA Graphs disabled: prefill kernels 1,385 → 482 for 44 tokens, decode kernels 8,968 → 3,280 for eight steps, and decode latency 97.9 → 66.8 ms. Traced fusion and attention changes; maximum logit error 6.1 × 10<sup>−5</sup>.</span> </a></p>
-<p><a class="project-row-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener"> <span class="project-row-title">GPU Kernel Benchmarking</span> <span class="project-row-meta">PyTorch and cuBLAS/cuBLASLt baselines, CUDA Graph replay, and 80/80 backend-shape correctness checks covering tails and KN/NK weight layouts. Profiling with PyTorch Profiler and Nsight Systems/Compute.</span> </a></p>
-<p><a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener"> <span class="project-row-title">Attention Occupancy Analysis</span> <span class="project-row-meta">Nsight Systems/Compute profiling of FA2-style forward attention: 255 registers/thread and 8.3% occupancy at D=128, alongside correctness and SDPA performance comparisons.</span> </a></p>
+<p><a class="project-row-card" href="https://github.com/AmanPandey28/lpcv2026" target="_blank" rel="noopener"> <span class="project-row-title">MobileCLIP2 Optimization for Qualcomm QNN</span> <span class="project-row-meta">LPCVC 2026: deployed MobileCLIP2-S2 as FP16 QNN DLCs on Qualcomm AI Hub’s S22 Family target. Image/text P90 latencies were 14.51/3.99 ms (18.50 ms sum versus 35 ms), with 794/794 profiled operations on NPU.</span> </a></p>
 </div>
-<section id="further-explorations" class="level2">
-<h2 class="anchored" data-anchor-id="further-explorations">Further Explorations</h2>
-<div class="project-stack">
-<p><!-- Add Nsight Systems GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Nsight Systems</span> <span class="project-row-meta">System-wide CPU/GPU timelines, CUDA API traces, NVTX ranges, and utilization gaps</span> </a></p>
-<p><!-- Add Nsight Compute GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">Nsight Compute</span> <span class="project-row-meta">Kernel-level metrics, occupancy, memory throughput, warp stalls, and source correlation</span> </a></p>
-<p><!-- Add PyTorch Profiler GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">PyTorch Profiler</span> <span class="project-row-meta">Operator costs, CPU/CUDA activity, stack traces, tensor shapes, memory, and traces</span> </a></p>
-<p><!-- Add CUDA Memory Profiling GitHub repo URL here --> <a class="project-row-card" href="#" target="_blank" rel="noopener"> <span class="project-row-title">CUDA Memory Profiling</span> <span class="project-row-meta">Allocator snapshots, fragmentation, peak memory, and non-PyTorch allocation debugging</span> </a></p>
-</div>
+<section id="export-graph-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="export-graph-optimization">Export &amp; Graph Optimization</h2>
+<p>Built a static <strong>PyTorch → ONNX opset-16 → QNN</strong> pipeline with FastViT reparameterization and normalization, SDPA, and EOS rewrites. Correcting preprocessing raised fractional R@10 from 0.043 to 0.897.</p>
+</section>
+<section id="accuracy-device-validation" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy-device-validation">Accuracy &amp; Device Validation</h2>
+<p>Validated all <strong>56 image and 211 text device outputs</strong> at unchanged R@10 of <strong>0.897470</strong>, with image/text cosine similarity of <strong>0.999863/0.999998</strong>.</p>
+<p>Rejected calibrated W8A16 QDQ after image cosine similarity dropped to 0.811, and isolated an S22/v69 DLC-composition failure. These checks informed the deployment choice alongside latency measurements.</p>
 
 
 </section>

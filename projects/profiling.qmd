@@ -10,6 +10,25 @@ CUDA kernels, memory allocation, and full CPU/GPU timelines.
 </p>
 
 <div class="project-stack">
+  <a class="project-row-card" href="https://github.com/AmanPandey28/torch-compile-internals" target="_blank" rel="noopener">
+    <span class="project-row-title">LLM Compiler Profiling</span>
+    <span class="project-row-meta">Qwen2.5-0.5B FP32 on RTX 5050 with CUDA Graphs disabled: prefill kernels 1,385 → 482 for 44 tokens, decode kernels 8,968 → 3,280 for eight steps, and decode latency 97.9 → 66.8 ms. Traced fusion and attention changes; maximum logit error 6.1 × 10<sup>−5</sup>.</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/AmanPandey28/cross_dsl_kernels" target="_blank" rel="noopener">
+    <span class="project-row-title">GPU Kernel Benchmarking</span>
+    <span class="project-row-meta">PyTorch and cuBLAS/cuBLASLt baselines, CUDA Graph replay, and 80/80 backend-shape correctness checks covering tails and KN/NK weight layouts. Profiling with PyTorch Profiler and Nsight Systems/Compute.</span>
+  </a>
+
+  <a class="project-row-card" href="https://github.com/AmanPandey28/triton-flash-attention" target="_blank" rel="noopener">
+    <span class="project-row-title">Attention Occupancy Analysis</span>
+    <span class="project-row-meta">Nsight Systems/Compute profiling of FA2-style forward attention: 255 registers/thread and 8.3% occupancy at D=128, alongside correctness and SDPA performance comparisons.</span>
+  </a>
+</div>
+
+## Further Explorations
+
+<div class="project-stack">
   <!-- Add Nsight Systems GitHub repo URL here -->
   <a class="project-row-card" href="#" target="_blank" rel="noopener">
     <span class="project-row-title">Nsight Systems</span>

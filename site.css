@@ -624,6 +624,7 @@ body.quarto-dark code {
 .resume-preview {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   background: #fff;
 }
@@ -727,6 +728,7 @@ body.quarto-dark .resume-actions .resume-primary-action {
 }
 
 body.quarto-dark .resume-viewer {
+  --resume-frame-border: var(--dark-border);
   background: var(--dark-surface);
   border-color: var(--dark-border);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
@@ -759,6 +761,9 @@ body.quarto-dark .resume-viewer {
 }
 
 .resume-viewer-preview {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   min-height: 0;
 }

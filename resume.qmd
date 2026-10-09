@@ -10,9 +10,12 @@ description: "Current resume of Aman Pandey Sanjeev Kumar: LLM inference, GPU ke
 <div class="resume-actions resume-actions-panel"><a class="resume-primary-action" href="Resume.pdf?v=2026-10-08" download="Aman_Pandey_Sanjeev_Kumar_Resume.pdf"><i class="bi bi-download" aria-hidden="true"></i> Download Resume</a><a href="Resume.pdf?v=2026-10-08" target="_blank" rel="noopener">Open PDF</a><a href="projects/index.html">View Projects</a><a href="https://github.com/AmanPandey28" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/aman-pandey-sanjeev-kumar-b55867b8/" target="_blank" rel="noopener">LinkedIn</a></div>
 </div>
 
-<div class="resume-viewer resume-viewer-primary resume-viewer-preview">
-<img class="resume-preview" src="assets/resume-preview.png" width="1546" height="2000" alt="Current resume of Aman Pandey Sanjeev Kumar. Project summaries, skills, education, and experience follow below." fetchpriority="high">
+```{=html}
+<!-- Keep essential sizing inline so cached site styles cannot crop the resume. -->
+<div class="resume-viewer resume-viewer-primary resume-viewer-preview" style="box-sizing: border-box; width: 100%; max-width: 100%; height: auto; min-height: 0; overflow: hidden; border: 1px solid var(--resume-frame-border, #d6d6d6); border-radius: 8px;">
+<img class="resume-preview" src="assets/resume-preview.png" width="1546" height="2000" style="display: block; width: 100%; max-width: 100%; height: auto;" alt="Current resume of Aman Pandey Sanjeev Kumar. Project summaries, skills, education, and experience follow below." fetchpriority="high">
 </div>
+```
 
 ## Technical Focus
 
